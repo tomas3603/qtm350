@@ -1,74 +1,90 @@
 ---
-title: QTM 151 - Introduction to Statistical Computing II
-subtitle: Lecture 01 - Introduction and Course Overview
-date: 28 August, 2024
+title: "Welcome to Data Science Computing!"
+subtitle: "Lecture 01: Introduction"
+date: "2024-08-26"
 date-format: "DD MMMM, YYYY"
 author:
   - name: Danilo Freire
+    orcid: 0000-0002-4712-6810
     email: danilo.freire@emory.edu
     affiliations: "Department of Quantitative Theory and Methods <br> Emory University"
 format:
   clean-revealjs:
     self-contained: true
-    footer: "[Lecture 01](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html)"
+    footer: "[Lecture 01](https://danilofreire.github.io/qtm350/lectures/lecture-01/01-introduction.html)"
 bibliography: references.bib
 transition: slide
 transition-speed: default
 scrollable: true
+engine: knitr
 editor:
   render-on-save: true
 ---
 
-```{r}
-#| echo: false
-#| results: hide 
-knitr::opts_chunk$set(echo = TRUE)
-# Function to check if a package is installed, and install it if not
-install_if_missing <- function(package) {
+```{r setup, include=FALSE}
+# figures formatting setup
+options(htmltools.dir.version = FALSE)
+library(knitr)
+opts_chunk$set(
+  prompt = T,
+  fig.align="center", #fig.width=6, fig.height=4.5, 
+  # out.width="748px", #out.length="520.75px",
+  dpi=300, #fig.path='Figs/',
+  cache=T, #echo=F, warning=F, message=F
+  engine.opts = list(bash = "-l")
+  )
+
+## Next hook based on this SO answer: https://stackoverflow.com/a/39025054
+knit_hooks$set(
+  prompt = function(before, options, envir) {
+    options(
+      prompt = if (options$engine %in% c('sh','bash', 'zsh')) '$ ' else 'R> ',
+      continue = if (options$engine %in% c('sh','bash', 'zsh')) '$ ' else '+ '
+      )
+})
+
+packages <- c("tidyverse", "emo", "fontawesome")
+
+for (package in packages) {
   if (!require(package, character.only = TRUE)) {
     install.packages(package, dependencies = TRUE)
     library(package, character.only = TRUE)
   }
 }
-
-# List of packages to ensure are installed and loaded
-packages <- c("emo", "fontawesome")
-
-# Apply the function to each package
-lapply(packages, install_if_missing)
 ```
 
-# Welcome to QTM 151 - Introduction to Statistical Computing II! `{r} emo::ji('partying_face')` `{r} emo::ji('tada')` {background-color="#2d4563"}
+# Welcome to QTM350 - Data Science Computing! `r emo::ji('partying_face')` `r emo::ji('tada')` {background-color="#2d4563"}
 
-## Lecture Overview
+## Lecture overview
+### Our agenda for today
 
 <br>
 
+:::{.incremental}
 - Introduction
 - Motivation
-- Class Logistics
-- Computing Set up
+- Class logistics
+- Computer set up
+:::
 
-## Course Materials
-
-### Important Links
+## Course materials
+### Important links
 
 ::: {style="font-size: 28px;"}
-`r fa('github')` Course repository: <https://github.com/danilofreire/qtm151>
+`r fa('github')` Course repository: <https://github.com/danilofreire/qtm350>
 
-`r fa('globe')` Course website: <https://danilofreire.github.io/qtm151>
+`r fa('globe')` Course website: <https://danilofreire.github.io/qtm350>
 
-This course is hosted on GitHub, where you will find lecture materials, code samples, our discussion space, assignments, and final project instructions. Canvas will be used for course management, including assignment submissions, grades, and announcements. Please familiarise yourself with both platforms, and reach out if you have any questions.
+This course is hosted on GitHub, which serves as our central hub for lecture materials, code examples, discussions, assignments, and final project guidelines. We will use Canvas for course administration, including submitting assignments, accessing grades, and receiving announcements. Please take some time to get to know both platforms, and reach out if you have any questions.
 
 ::: {.callout-note}
-Please remember to check the course website regularly for updates and announcements.
+Please remember to check the course repository regularly for updates and announcements.
 :::
 :::
 
-# Nice to meet you! {background-color="#2d4563"}
+# Nice to meet you! `r emo::ji('waving_hand')` {background-color="#2d4563"}
 
 ## Instructor
-
 ### A bit about me
 
 :::: {.columns}
@@ -78,9 +94,9 @@ Please remember to check the course website regularly for updates and announceme
 ::: {style="font-size: 26px;"}
 `r fa('envelope')` [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu)
 
-`r fa('calendar')` <https://calendly.com/danilofreire/office-hours>
-
 `r fa('globe')` <https://danilofreire.github.io/>
+
+`r fa('github')` <https://github.com/danilofreire/>
 :::
 :::
 
@@ -107,8 +123,17 @@ Please remember to check the course website regularly for updates and announceme
 
 ## {background-image="figures/moonwatch.jpg" background-size="100%"}
 
+## What about you? (time permitting!)
+
+<br>
+
+Now it's your turn! `r emo::ji('wave')`
+
+<br>
+
+Please introduce yourself, tell us your name, your major, one thing you really like, and something we don't know about your city or country! `r emo::ji('smiling_face_with_smiling_eyes')`
+
 ## My teaching philosophy
-### What you can expect from me
 
 <br>
 
@@ -130,7 +155,8 @@ Please remember to check the course website regularly for updates and announceme
 
 - We are all here to help you! So feel free to ask questions during class, office hours, or via email `r emo::ji('smiling_face_with_smiling_eyes')`
 
-## Office hours: What for and what not for
+## Office hours
+### What for and what not for
 
 <br>
 
@@ -139,11 +165,11 @@ Please remember to check the course website regularly for updates and announceme
   - Discussion of issues related to the assignments
   - Boosting your knowledge of data science
 
-. . . 
-
+:::{.fragment .fade-in}
 - What these sessions are [not]{.alert} meant for: 
     - Solving the assignments for you
     - Taking care of developing your coding skills
+:::
 
 ## Class etiquette
 
@@ -160,184 +186,361 @@ Please remember to check the course website regularly for updates and announceme
 :::
 ::::
 
-# Why Python and SQL? {background-color="#2d4563"}
+# Motivation: What is data science? `r emo::ji('man_technologist')` `r emo::ji('woman_technologist')` {background-color="#2d4563"}
 
-## Why Python
-### The world's most popular programming language
+## An old classic {transition="none"}
 
-::: {layout-ncol=2}
-![](figures/career.jpg)
+![](figures/venn-orig-1.png){ height=550px style="display: block; margin: auto;" }
 
-![](figures/popularity.jpg)
+## An old classic {transition="none"}
+
+![](figures/venn-orig-2.png){ height=550px style="display: block; margin: auto;" }
+
+## An old classic {transition="none"}
+
+![](figures/venn-orig-3.png){ height=550px style="display: block; margin: auto;" }
+
+## An old classic {transition="none"}
+
+![](figures/venn-orig-4.png){ height=550px style="display: block; margin: auto;" }
+
+## An old classic {transition="none"}
+
+![](figures/venn-orig-5.png){ height=550px style="display: block; margin: auto;" }
+
+## Our focus! {transition="none"}
+
+![](figures/venn-focus.png){ height=550px style="display: block; margin: auto;" }
+
+## Rise of the digital information age
+
+:::{style="margin-top: 40px;"}
 :::
 
-## Why Python
-### Great community and easy to learn
+![](figures/digital.jpeg){ width=110% style="display: block; margin: auto;" }
+
+## Social media data
+
+![](figures/redes.png){ width=20% style="display: block; margin: auto;" }
+
+## New data formats
 
 :::: {.columns}
-::: {.column width=43%}
-There are thousands of Python user groups worldwide 
-
-The Python community is very active and welcoming!
-![](figures/python-meetup.png)
+::: {.column width="50%"}
+![](figures/tweets.png){ width=100% style="display: block; margin: auto;" }
 :::
 
-::: {.column width=57%}
-- Java: 
-```{java}
-public class Welcome {
-    public static void main(String[] args) {
-        System.out.println("Welcome to QTM151!");
-    }
-}
+::: {.column width="50%"}
+![](figures/imagescnn.png){ width=100% style="display: block; margin: auto;" }
 
-```
-
-- Python:
-```{python}
-#| eval: false
-#| output: false
-#| python.reticulate: false
-print("Welcome to QTM151!")
-```
+![](figures/audio.png){ width=100% style="display: block; margin: auto;" }
 :::
 ::::
 
-## Why Python
-### Salaries are good!
+## Survey data
 
-![](figures/salary.png)
+![](figures/survey.png){ width=80% style="display: block; margin: auto;" }
 
-## Why SQL
-### The world's most popular database language
+## Cheap computing power
 
-:::: {.columns}
-::: {.column width=50%}
-- SQL is the standard language for relational database management systems
-- Easy to learn
-- Standardised
-- Manage huge amounts of data
-- Widely used in industry
-- Great for data analysis
+![](figures/collab.png){ width=80% style="display: block; margin: auto;" }
+
+# And what can we do with all these data? `r emo::ji('thinking_face')` {background-color="#2d4563"}
+
+## Scraping the web for social research
+
+:::{style="margin-top: 40px;"}
 :::
 
-::: {.column width=50%}
-![](figures/sql.png){width=400px}
-![](figures/postgresql.webp){width=400px}
-:::
-::::
+![](figures/scrap.png)
 
-## Why SQL
-### Salaries are good too!
+## Tackling social problems
 
-![](figures/sql-salary.png)
-
-# Course Logistics {background-color="#2d4563"}
-
-## Course Objectives
-
-1. Perform basic operations and write functions in Python
-2. Conduct data wrangling and manipulate data using Python libraries such as Pandas
-3. Merge and manage databases using SQL
-4. Create visualisations to effectively communicate data insights
-5. Implement linear models and understand the principles of time series analysis
-6. Use Jupyter Notebooks for reproducible research
-7. Develop problem-solving skills relevant to data analysis and statistical computing
-
-## Grades and Late Policy
-
-:::: {.columns}
-::: {.column width=50%}
-::: {style="font-size: 28px;"}
-- Assignments (x10): [50%]{.alert}​
-  - Practice class concepts​
-
-- Quizzes (x5): [30%]{.alert}​
-  - Questions are given in advance​
-  - Data is provided in the class​
-
-- Final Project: [20%​]{.alert}
-  - Will provide guidelines on Canvas​ and GitHub
-  - Due at the end of the semester​
-
-- Midsemester Survey: [+0.5% (Extra)]{.alert}
-
-- End of semester Survey: [+0.5% (Extra)]{.alert}
-:::
+:::{style="margin-top: 40px;"}
 :::
 
-::: {.column width=50%}
-::: {style="font-size: 28px;"}
-- All materials will be available on the course website​ and GitHub​ repository
-- Late assignments will automatically be graded for half-credit​
-- To account for unforeseen circumstances, we will drop the worst assignment and the worst quiz​
-- Watch out for the assignments to install software. You will need these to be able to use the lectures notes
+![](figures/social.png)
+
+## Reducing hate speech
+
+:::{style="margin-top: 40px;"}
 :::
+
+![](figures/hate.png)
+
+## Monitoring the effects of climate change on health
+
+:::{style="margin-top: 40px;"}
+:::
+
+![](figures/climate.png)
+
+## Calling bullsh*t when you see it
+
+:::{style="margin-top: 40px;"}
+:::
+
+::::{.columns}
+::: {.column width="30%"}
+:::{style="font-size: 20px;"}
+:::{style="margin-top: 40px;"}
+**Learn not to be fooled by**
+
+- big data
+- garbage data
+- garbage models
+- weird samples
+- claims of generality
+- implausibly large effect sizes
+- overfitted models
+
+And much more...
+:::
+:::
+:::
+
+::: {.column width="70%"}
+![](figures/bullshit.png)
 :::
 ::::
 
-# Computing Set Up {background-color="#2d4563"}
+## And much more...
 
-## Our Class in a Nutshell
-
-![](figures/nutshell.png)
-
-## Installing Python using Anaconda
-### Anaconda has (almost) all the libraries we need
-
-<br>
-
-- Follow the instructions [on our GitHub repository](https://github.com/danilofreire/qtm151/blob/main/tutorials/01-vscode-anaconda-tutorial.pdf) 
-- We are using Anaconda virtual environments for this class (I will cover this in more detail next class)​
-- For now: Anaconda comes with a Python installation​
-
+::: {style="font-size: 30px;"}
+::: {style="margin-top: 40px;"}
 ::: {.incremental}
-- Questions?
+- Abundance of data available for research and for governments to make better decisions
+  - Opportunities for novel research questions
+  - New methods to answer longstanding research questions
+
+- New technologies also have social implications and can raise important policy issues
+  - Ethical concerns
+  - Use of technology by malicious actors
+  - Government use of technology to censor or monitor citizens
+:::
+:::
 :::
 
-## Installing VSCode and Connecting Anaconda​
+# Course overview and logistics `r emo::ji('open_book')` `r emo::ji('books')` `r emo::ji('computer')` {background-color="#2d4563"}
+
+## Course objectives
 
 <br>
 
-- Follow the instructions [Installing Visual Studio Code and Connecting it with Anaconda](https://github.com/danilofreire/qtm151/blob/main/tutorials/01-vscode-anaconda-tutorial.pdf) from GitHub
-- For now: know that "base" is the Anaconda virtual environment that comes by default with the installation​
-- The next step is to check if the connection between VSCode and Anaconda worked -> [the `Python: Select Interpreter` option should include Python ("base")​]{.alert}
-- Next step: we will create a new folder for the QTM151 course and download our virtual GitHub folder and opening it in VSCode
-
-## {background-image="figures/github01.png" background-size="100%"}
-
-## {background-image="figures/github02.png" background-size="100%"}
-
-## Jupyter Notebooks
-
 :::: {.columns}
-::: {.column width=30%}
-::: {style="font-size: 26px;"}
-- We will use Jupyter Notebooks for our classes. We have [a tutorial on how to use them too](https://github.com/danilofreire/qtm151/blob/main/tutorials/02-jupyter-markdown-tutorial.pdf)
-- Jupyter Notebooks are a great way to combine code, text, and visualisations
-- It is encouraged that you bring your laptop to class
-- Lecture notes are designed to be follow-along. There will be many "try it yourself" exercises throughout the lectures!
+::: {.column width="50%"}
+::: {style="font-size: 24px;"}
+- Use data science tools for project collaboration and version control
+- Apply advanced techniques for data storage, manipulation, and querying
+- Create clear data visualisations and write well-documented code
+- Use AI tools to help with programming tasks
+- Understand the basics of containerisation and parallel computing
 :::
 :::
 
-::: {.column width=70%}
-![](figures/jupyter.png)
+::: {.column width="50%"}
+![](figures/dsc.jpg)
 :::
 ::::
 
-## Next Class
+## Key focus areas
+### Why reliability, reproducibility, and robustness matter
+
+- This course centres around three key areas of the modern data science workflow: [reliability]{.alert}, [reproducibility]{.alert}, and [robustness]{.alert}
+
+:::: {.columns}
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="font-size: 24px;"}
+- [Reliability]{.alert}:
+  - Ensures consistency in results across multiple runs
+  - Minimises errors in data processing and analysis
+  - Supports accurate interpretation of findings
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="font-size: 24px;"}
+- [Reproducibility]{.alert}:
+  - Allows others to verify and build upon your work
+  - Enhances the credibility of research outcomes
+  - Facilitates long-term preservation of scientific knowledge
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="font-size: 24px;"}
+- [Robustness]{.alert}:
+  - Enables analyses to handle unexpected data variations
+  - Improves the stability of results under different conditions
+  - Supports the scalability of methods to larger datasets
+:::
+:::
+:::
+::::
+
+## Key tools
+
+- [Command line interfaces](https://en.wikipedia.org/wiki/Command-line_interface) and [vim](https://www.vim.org/) for precise control
+
+::::{.columns}
+::: {.column width="50%"}
+![](figures/cli.png)
+:::
+
+::: {.column width="50%"}
+![](figures/vim.png)
+:::
+::::
+
+## Key tools
+
+- [Git](https://git-scm.com/) and [GitHub](https://github.com) for version control, and [GitHub Copilot](https://copilot.github.com/) for code generation
+
+:::: {.columns}
+::: {.column width="33%"}
+![](figures/git.png){width=80%}
+:::
+
+::: {.column width="33%"}
+![](figures/github.png){width=80%}
+:::
+
+::: {.column width="33%"}
+![](figures/github-copilot.png){width=60%}
+:::
+::::
+
+## Key tools
+
+- [SQL](https://www.w3schools.com/sql/) and [Pandas](https://pandas.pydata.org/) for robust data manipulation
+
+::::{.columns}
+::: {.column width="50%"}
+![](figures/postgresql.webp)
+:::
+
+::: {.column width="50%"}
+<br>
+![](figures/pandas.png)
+:::
+::::
+
+## Key tools
+
+- [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/), and [plotnine](https://plotnine.readthedocs.io/) (if you want to!) for flexible visualisation
+
+::::{.columns}
+::: {.column width="33%"}
+![](figures/matplotlib.png)
+:::
+
+::: {.column width="33%"}
+![](figures/seaborn.png)
+:::
+
+::: {.column width="33%"}
+![](figures/plotnine.png)
+:::
+::::
+
+## Key tools
+
+- [Docker](https://www.docker.com/) for consistent computational environments
+- [Dask](https://dask.org/) for scalable and parallel computing
+
+::::{.columns}
+::: {.column width="50%"}
+![](figures/docker.png)
+:::
+
+::: {.column width="50%"}
+![](figures/dask.png)
+:::
+::::
+
+## Logistics
+### Course information
 
 ::: {style="font-size: 28px;"}
-- Don't worry if you are not able to follow along with the installation instructions. We will have time to do this next class
-- We will start with the basics of Jupyter Notebooks
-- We will also cover the basics of Anaconda and VSCode
-- Please remember to check the course repository, mainly the tutorials: <https://github.com/danilofreire/qtm151> 
-- And please do not forget:
-  - Coding ability can be developed
-  - Academic skills and abilities are acquired through hard work, mistakes, and perseverance. Coding is no different
-  - My only goal here is that you learn the material. Please ask me questions! `{r} emo::ji('smiling_face_with_smiling_eyes')`
+- **Syllabus**: Available on our [course repository](https://github.com/danilofreire/qtm350/blob/main/syllabus.pdf) and [website](https://danilofreire.github.io/qtm350/syllabus.html). The course is designed to be self-contained. The syllabus includes links to slides and Jupyter Notebooks we will use in class, along with recommended readings, and problem sets. I will upload slides throughout the term as we progress.
+- **Schedule**: Lectures are on Mondays and Wednesdays from 2:30 to 3:45 pm
+- **Office Hours**: I'm available to meet you at any time. [And I mean it.]{.alert} Please reach out a couple of days in advance and we can schedule a meeting
+
+- **Materials**:
+    - Course repository: <https://github.com/danilofreire/qtm350>
+    - Canvas
+:::
+
+## Assignments
+### How you will be graded
+
+::: {style="margin-top: 40px;"}
+:::
+
+- **Problem sets**: Ten of them, due on Wednesdays at 11:59 pm (50%)
+- **In-class quizzes**: Five of them (30%)
+- **Final project**: Due on the last day of class (20%)
+- **Late policy**: 10% off per day late
+- **Collaboration**: You can discuss assignments with your classmates, but you must write your own code and submit your own work. AI is allowed.
+- **Academic integrity**: Please refer to the syllabus for the university's policy on academic integrity
+
+# Set up `r emo::ji('computer')` `r emo::ji('hammer_and_wrench')` {background-color="#2d4563"}
+
+## Software
+
+::: {style="margin-top: 40px;"}
+:::
+
+- **Git**: Version control system. Download it [here](https://git-scm.com/). Instructions for installation [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Feel free to configure it if you wish (instructions [here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)), but we are going to talk about it in class.
+
+- **GitHub**: Online platform for hosting code repositories. You will use it a lot, and not only for this class. Create an account on [GitHub](https://github.com/) and register for a student/educator [discount](https://education.github.com/discount_requests/new). 
+
+- There is a series of tutorials available on our course website on how to set up Git and GitHub: <https://danilofreire.github.io/qtm350/tutorials/tutorials.html>
+
+## OS extras
+
+::: {style="margin-top: 40px;"}
+:::
+
+- **Windows:** Install [Bash for Windows](https://learn.microsoft.com/en-us/windows/wsl/install). Another good tutorial can be found [here](https://itsfoss.com/install-bash-on-windows/). You might also want to install [Chocolatey](https://chocolatey.org/) (they offer a free and open-source version)
+- **Mac:** Install [Homebrew](https://brew.sh/) and [Oh My Zsh](https://ohmyz.sh/)
+- **Linux:** None (you should be good to go)
+
+## Other tools
+
+::: {style="margin-top: 40px;"}
+:::
+
+- We will have time to install other tools during the course. But if you want to get ahead, you can install the following:
+- **VS Code**: Code editor. Download it [here](https://code.visualstudio.com/)
+- **Anaconda**: Python distribution. Download it [here](https://www.anaconda.com/products/distribution)
+- **Docker**: Containerisation tool. Download it [here](https://www.docker.com/)
+- **PostgreSQL**: Database management system. Download it [here](https://www.postgresql.org/)
+
+::: {style="margin-top: 40px;"}
+:::
+
+- Tutorials for these tools are available on our course website: <https://danilofreire.github.io/qtm350/tutorials/tutorials.html>
+
+## Next class
+
+::: {style="font-size: 28px;"}
+- We will cover computational literacy, including binary and hexadecimal numbers, and character encoding systems like ASCII and Unicode
+- We will also discuss the early days of computing, focusing on Konrad Zuse's work with digital computers and binary arithmetic
+- We will talk about the evolution of programming languages, from assembly to modern high-level languages like Python, and the differences between compiled and interpreted languages
+- There will be time for questions about installing the terminal. You do not need it for next week, but consider installing it soon, as it will be necessary in two weeks. Please create a [GitHub educational account](https://education.github.com/discount_requests/new) if you do not have one `r emo::ji('winking_face')`
+
+
+:::{.fragment .fade-in}
+... **and that's all for today!** `r emo::ji('smiling_face_with_smiling_eyes')`
+:::
 :::
 
 # Questions? {background-color="#2d4563"}
 
-# Thank you very much for your attention! `{r} emo::ji ('smiley')` `{r} emo::ji ('partying_face')` {background-color="#2d4563"}
+# Thank you very much for your attention and have a great day! `r emo::ji('smiling_face_with_smiling_eyes')` {background-color="#2d4563"}

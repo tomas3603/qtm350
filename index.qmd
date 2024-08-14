@@ -9,7 +9,7 @@ Welcome to [QTM 350](https://github.com/danilofreire/qtm350)! This course introd
 ## Contact Information
 
 - [Danilo Freire](https://danilofreire.github.io/)
-  - Email: [`danilofreire@gmail.com`](mailto:danilofreire@gmail.com)
+  - Email: [`danilo.freire@emory.edu`](mailto:danilo.freire@emory.edu)
   - Office hours: [By appointment at any time (online or in person)](https://calendly.com/danilofreire/office-hours).
 
 ## Learning Outcomes

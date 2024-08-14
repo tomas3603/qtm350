@@ -16,35 +16,35 @@
   {
     "objectID": "lectures/lecture-01/01-introduction.html#lecture-overview",
     "href": "lectures/lecture-01/01-introduction.html#lecture-overview",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Lecture Overview",
-    "text": "Lecture Overview\n\n\nIntroduction\nMotivation\nClass Logistics\nComputing Set up"
+    "title": "Welcome to Data Science Computing!",
+    "section": "Lecture overview",
+    "text": "Lecture overview\nOur agenda for today\n\n\n\nIntroduction\nMotivation\nClass logistics\nComputer set up"
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#course-materials",
     "href": "lectures/lecture-01/01-introduction.html#course-materials",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Course Materials",
-    "text": "Course Materials\nImportant Links\n\n Course repository: https://github.com/danilofreire/qtm151\n Course website: https://danilofreire.github.io/qtm151\nThis course is hosted on GitHub, where you will find lecture materials, code samples, our discussion space, assignments, and final project instructions. Canvas will be used for course management, including assignment submissions, grades, and announcements. Please familiarise yourself with both platforms, and reach out if you have any questions.\n\n\n\n\n\n\nNote\n\n\nPlease remember to check the course website regularly for updates and announcements."
+    "title": "Welcome to Data Science Computing!",
+    "section": "Course materials",
+    "text": "Course materials\nImportant links\n\n Course repository: https://github.com/danilofreire/qtm350\n Course website: https://danilofreire.github.io/qtm350\nThis course is hosted on GitHub, which serves as our central hub for lecture materials, code examples, discussions, assignments, and final project guidelines. We will use Canvas for course administration, including submitting assignments, accessing grades, and receiving announcements. Please take some time to get to know both platforms, and reach out if you have any questions.\n\n\n\n\n\n\nNote\n\n\nPlease remember to check the course repository regularly for updates and announcements."
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#instructor",
     "href": "lectures/lecture-01/01-introduction.html#instructor",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "title": "Welcome to Data Science Computing!",
     "section": "Instructor",
-    "text": "Instructor\nA bit about me\n\n\n\n\n danilo.freire@emory.edu\n https://calendly.com/danilofreire/office-hours\n https://danilofreire.github.io/\n\n\n\n Visiting Assistant Professor in the QTM\n MA from the Graduate Institute Geneva, PhD from King’s College London, Postdoc at Brown University, Senior Lecturer at the University of Lincoln, UK.\n Research interests: computational social science, experimental methods, policy evaluation, political violence, organised crime."
+    "text": "Instructor\nA bit about me\n\n\n\n\n danilo.freire@emory.edu\n https://danilofreire.github.io/\n https://github.com/danilofreire/\n\n\n\n Visiting Assistant Professor in the QTM\n MA from the Graduate Institute Geneva, PhD from King’s College London, Postdoc at Brown University, Senior Lecturer at the University of Lincoln, UK.\n Research interests: computational social science, experimental methods, policy evaluation, political violence, organised crime."
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#my-teaching-philosophy",
     "href": "lectures/lecture-01/01-introduction.html#my-teaching-philosophy",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "title": "Welcome to Data Science Computing!",
     "section": "My teaching philosophy",
-    "text": "My teaching philosophy\nWhat you can expect from me\n\n\nI love teaching and aim to make learning fun\nClasses where students participate are the best\nHands-on activities help you learn better\nI am always available to help and answer questions. And I mean it\nYour feedback helps me improve my teaching. Please let me know what is working and what is not"
+    "text": "My teaching philosophy\n\n\nI love teaching and aim to make learning fun\nClasses where students participate are the best\nHands-on activities help you learn better\nI am always available to help and answer questions. And I mean it\nYour feedback helps me improve my teaching. Please let me know what is working and what is not"
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#teaching-assistants",
     "href": "lectures/lecture-01/01-introduction.html#teaching-assistants",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "title": "Welcome to Data Science Computing!",
     "section": "Teaching assistants",
     "text": "Teaching assistants\n\n\nThe teaching assistants for this course will be confirmed soon\nThey will be answering questions during our lectures and holding office hours (see Canvas or the course website for office hours information)\nThey will also be grading your assignments and quizzes (with my oversight)\nWe are all here to help you! So feel free to ask questions during class, office hours, or via email 😊"
   },
@@ -58,7 +58,7 @@
   {
     "objectID": "lectures/lecture-01/01-introduction.html#class-etiquette",
     "href": "lectures/lecture-01/01-introduction.html#class-etiquette",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "title": "Welcome to Data Science Computing!",
     "section": "Class etiquette",
     "text": "Class etiquette\n\n\n\nCoding can be tough and push you out of your comfort zone. If the course pace is too fast, let us know. I expect your commitment, but I do not want anyone to fail\nYou are all keen on data science, but your backgrounds vary. That is great! Some sessions might be more engaging than others. If you are bored, help others or explore new data science areas\nAlways be respectful to each other\nAsk questions whenever you need to!"
   },
@@ -100,9 +100,9 @@
   {
     "objectID": "lectures/lecture-01/01-introduction.html#course-objectives",
     "href": "lectures/lecture-01/01-introduction.html#course-objectives",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Course Objectives",
-    "text": "Course Objectives\n\nPerform basic operations and write functions in Python\nConduct data wrangling and manipulate data using Python libraries such as Pandas\nMerge and manage databases using SQL\nCreate visualisations to effectively communicate data insights\nImplement linear models and understand the principles of time series analysis\nUse Jupyter Notebooks for reproducible research\nDevelop problem-solving skills relevant to data analysis and statistical computing"
+    "title": "Welcome to Data Science Computing!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\n\n\n\n\nUse data science tools for project collaboration and version control\nApply advanced techniques for data storage, manipulation, and querying\nCreate clear data visualisations and write well-documented code\nUse AI tools to help with programming tasks\nUnderstand the basics of containerisation and parallel computing"
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#grades-and-late-policy",
@@ -142,9 +142,9 @@
   {
     "objectID": "lectures/lecture-01/01-introduction.html#next-class",
     "href": "lectures/lecture-01/01-introduction.html#next-class",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Next Class",
-    "text": "Next Class\n\n\nDon’t worry if you are not able to follow along with the installation instructions. We will have time to do this next class\nWe will start with the basics of Jupyter Notebooks\nWe will also cover the basics of Anaconda and VSCode\nPlease remember to check the course repository, mainly the tutorials: https://github.com/danilofreire/qtm151\nAnd please do not forget:\n\nCoding ability can be developed\nAcademic skills and abilities are acquired through hard work, mistakes, and perseverance. Coding is no different\nMy only goal here is that you learn the material. Please ask me questions! 😊"
+    "title": "Welcome to Data Science Computing!",
+    "section": "Next class",
+    "text": "Next class\n\n\nWe will cover computational literacy, including binary and hexadecimal numbers, and character encoding systems like ASCII and Unicode\nWe will also discuss the early days of computing, focusing on Konrad Zuse’s work with digital computers and binary arithmetic\nWe will talk about the evolution of programming languages, from assembly to modern high-level languages like Python, and the differences between compiled and interpreted languages\nThere will be time for questions about installing the terminal. You do not need it for next week, but consider installing it soon, as it will be necessary in two weeks. Please create a GitHub educational account if you do not have one 😉\n\n\n… and that’s all for today! 😊"
   },
   {
     "objectID": "lectures/lecture-02/02-jupyter.html",
@@ -319,7 +319,7 @@
     "href": "index.html#contact-information",
     "title": "QTM 350 - Data Science Computing",
     "section": "Contact Information",
-    "text": "Contact Information\n\nDanilo Freire\n\nEmail: danilofreire@gmail.com\nOffice hours: By appointment at any time (online or in person)."
+    "text": "Contact Information\n\nDanilo Freire\n\nEmail: danilo.freire@emory.edu\nOffice hours: By appointment at any time (online or in person)."
   },
   {
     "objectID": "index.html#learning-outcomes",
@@ -796,5 +796,215 @@
     "title": "Lectures",
     "section": "Schedule",
     "text": "Schedule\n\nWednesday, August 28: Lecture 01: Welcome to QTM 151 - Introduction. Please make sure to install the necessary software for the course by following the Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nMonday, September 02: Labour Day (no class)\nWednesday, September 04: Lecture 02: GitHub Review and Introduction to Jupyter Notebooks\n\nAssignment 01: Problem Set 01\n\nMonday, September 09: Lecture 03: Variables and Lists\nWednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers\n\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nMonday, September 16: Lecture 05: Boolean Variables and If/Else Statements\nWednesday, September 18: Lecture 06: While Loops and For Loops\n\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nMonday, September 23: Lecture 07: Applications 1: Simulation Studies\nWednesday, September 25: Lecture 08: Functions and Arguments\n\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nMonday, September 30: Lecture 09: Global and Local Variables\nWednesday, October 02: Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nMonday, October 07: Lecture 11: Subsetting Data\nWednesday, October 09: Lecture 12: Application 03: Linear Models\n\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nMonday, October 14: Fall Break (no class)\nWednesday, October 16: Lecture 13: Creating and Replacing Variables\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nMonday, October 21: Lecture 14: Quiz 2: Application 4: Random Assignment (6%)\nWednesday, October 23: Lecture 15: Aggregating Data\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nMonday, October 28: Lecture 16: Merging Data\nWednesday, October 30: Lecture 17: Introduction to SQL\n\nAssignment 08 due (5%)\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nMonday, November 04: Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nWednesday, November 06: Lecture 19: Import SQL Data into Python\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nMonday, November 11: Lecture 20: Merging Tables in SQL\nWednesday, November 13: Lecture 21: Time Series Analysis\n\nAssignment 10 due (5%)\n\nMonday, November 18: Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nWednesday, November 20: Lecture 23: Pivot Tables\nMonday, November 25: Lecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nWednesday, November 27: Thanksgiving Break (no class)\nMonday, December 02: Lecture 25: Manipulating Text Data\nWednesday, December 04: Lecture 26: Advanced Plots\nMonday, December 09: Final Project due (20%)\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture."
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#what-about-you-time-permitting",
+    "href": "lectures/lecture-01/01-introduction.html#what-about-you-time-permitting",
+    "title": "Welcome to Data Science Computing!",
+    "section": "What about you? (time permitting!)",
+    "text": "What about you? (time permitting!)\n\nNow it’s your turn! 👋\n\nPlease introduce yourself, tell us your name, your major, one thing you really like, and something we don’t know about your city or country! 😊"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#office-hours",
+    "href": "lectures/lecture-01/01-introduction.html#office-hours",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Office hours",
+    "text": "Office hours\nWhat for and what not for\n\n\nWhat office hours are meant for:\n\nApplying tools in practice\nDiscussion of issues related to the assignments\nBoosting your knowledge of data science\n\n\n\n\nWhat these sessions are not meant for:\n\nSolving the assignments for you\nTaking care of developing your coding skills"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#an-old-classic",
+    "href": "lectures/lecture-01/01-introduction.html#an-old-classic",
+    "title": "Welcome to Data Science Computing!",
+    "section": "An old classic",
+    "text": "An old classic"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#an-old-classic-1",
+    "href": "lectures/lecture-01/01-introduction.html#an-old-classic-1",
+    "title": "Welcome to Data Science Computing!",
+    "section": "An old classic",
+    "text": "An old classic"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#an-old-classic-2",
+    "href": "lectures/lecture-01/01-introduction.html#an-old-classic-2",
+    "title": "Welcome to Data Science Computing!",
+    "section": "An old classic",
+    "text": "An old classic"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#an-old-classic-3",
+    "href": "lectures/lecture-01/01-introduction.html#an-old-classic-3",
+    "title": "Welcome to Data Science Computing!",
+    "section": "An old classic",
+    "text": "An old classic"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#an-old-classic-4",
+    "href": "lectures/lecture-01/01-introduction.html#an-old-classic-4",
+    "title": "Welcome to Data Science Computing!",
+    "section": "An old classic",
+    "text": "An old classic"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#our-focus",
+    "href": "lectures/lecture-01/01-introduction.html#our-focus",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Our focus!",
+    "text": "Our focus!"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#rise-of-the-digital-information-age",
+    "href": "lectures/lecture-01/01-introduction.html#rise-of-the-digital-information-age",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Rise of the digital information age",
+    "text": "Rise of the digital information age"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#social-media-data",
+    "href": "lectures/lecture-01/01-introduction.html#social-media-data",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Social media data",
+    "text": "Social media data"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#new-data-formats",
+    "href": "lectures/lecture-01/01-introduction.html#new-data-formats",
+    "title": "Welcome to Data Science Computing!",
+    "section": "New data formats",
+    "text": "New data formats"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#survey-data",
+    "href": "lectures/lecture-01/01-introduction.html#survey-data",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Survey data",
+    "text": "Survey data"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#cheap-computing-power",
+    "href": "lectures/lecture-01/01-introduction.html#cheap-computing-power",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Cheap computing power",
+    "text": "Cheap computing power"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#scraping-the-web-for-social-research",
+    "href": "lectures/lecture-01/01-introduction.html#scraping-the-web-for-social-research",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Scraping the web for social research",
+    "text": "Scraping the web for social research"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#tackling-social-problems",
+    "href": "lectures/lecture-01/01-introduction.html#tackling-social-problems",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Tackling social problems",
+    "text": "Tackling social problems"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#reducing-hate-speech",
+    "href": "lectures/lecture-01/01-introduction.html#reducing-hate-speech",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Reducing hate speech",
+    "text": "Reducing hate speech"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#monitoring-the-effects-of-climate-change-on-health",
+    "href": "lectures/lecture-01/01-introduction.html#monitoring-the-effects-of-climate-change-on-health",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Monitoring the effects of climate change on health",
+    "text": "Monitoring the effects of climate change on health"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#calling-bullsht-when-you-see-it",
+    "href": "lectures/lecture-01/01-introduction.html#calling-bullsht-when-you-see-it",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Calling bullsh*t when you see it",
+    "text": "Calling bullsh*t when you see it\n\n\n\n\n\n\n\nLearn not to be fooled by\n\nbig data\ngarbage data\ngarbage models\nweird samples\nclaims of generality\nimplausibly large effect sizes\noverfitted models\n\nAnd much more…"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#and-much-more",
+    "href": "lectures/lecture-01/01-introduction.html#and-much-more",
+    "title": "Welcome to Data Science Computing!",
+    "section": "And much more…",
+    "text": "And much more…\n\n\n\n\nAbundance of data available for research and for governments to make better decisions\n\nOpportunities for novel research questions\nNew methods to answer longstanding research questions\n\nNew technologies also have social implications and can raise important policy issues\n\nEthical concerns\nUse of technology by malicious actors\nGovernment use of technology to censor or monitor citizens"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#key-focus-areas",
+    "href": "lectures/lecture-01/01-introduction.html#key-focus-areas",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Key focus areas",
+    "text": "Key focus areas\nWhy reliability, reproducibility, and robustness matter\n\nThis course centres around three key areas of the modern data science workflow: reliability, reproducibility, and robustness\n\n\n\n\n\n\nReliability:\n\nEnsures consistency in results across multiple runs\nMinimises errors in data processing and analysis\nSupports accurate interpretation of findings\n\n\n\n\n\n\n\n\nReproducibility:\n\nAllows others to verify and build upon your work\nEnhances the credibility of research outcomes\nFacilitates long-term preservation of scientific knowledge\n\n\n\n\n\n\n\n\nRobustness:\n\nEnables analyses to handle unexpected data variations\nImproves the stability of results under different conditions\nSupports the scalability of methods to larger datasets"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#key-tools",
+    "href": "lectures/lecture-01/01-introduction.html#key-tools",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Key tools",
+    "text": "Key tools\n\nCommand line interfaces and vim for precise control"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#key-tools-1",
+    "href": "lectures/lecture-01/01-introduction.html#key-tools-1",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Key tools",
+    "text": "Key tools\n\nGit and GitHub for version control, and GitHub Copilot for code generation"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#key-tools-2",
+    "href": "lectures/lecture-01/01-introduction.html#key-tools-2",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Key tools",
+    "text": "Key tools\n\nSQL and Pandas for robust data manipulation"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#key-tools-3",
+    "href": "lectures/lecture-01/01-introduction.html#key-tools-3",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Key tools",
+    "text": "Key tools\n\nMatplotlib, Seaborn, and plotnine (if you want to!) for flexible visualisation"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#key-tools-4",
+    "href": "lectures/lecture-01/01-introduction.html#key-tools-4",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Key tools",
+    "text": "Key tools\n\nDocker for consistent computational environments\nDask for scalable and parallel computing"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#logistics",
+    "href": "lectures/lecture-01/01-introduction.html#logistics",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Logistics",
+    "text": "Logistics\nCourse information\n\n\nSyllabus: Available on our course repository and website. The course is designed to be self-contained. The syllabus includes links to slides and Jupyter Notebooks we will use in class, along with recommended readings, and problem sets. I will upload slides throughout the term as we progress.\nSchedule: Lectures are on Mondays and Wednesdays from 2:30 to 3:45 pm\nOffice Hours: I’m available to meet you at any time. And I mean it. Please reach out a couple of days in advance and we can schedule a meeting\nMaterials:\n\nCourse repository: https://github.com/danilofreire/qtm350\nCanvas"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#assignments",
+    "href": "lectures/lecture-01/01-introduction.html#assignments",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Assignments",
+    "text": "Assignments\nHow you will be graded\n\n\n\n\nProblem sets: Ten of them, due on Wednesdays at 11:59 pm (50%)\nIn-class quizzes: Five of them (30%)\nFinal project: Due on the last day of class (20%)\nLate policy: 10% off per day late\nCollaboration: You can discuss assignments with your classmates, but you must write your own code and submit your own work. AI is allowed.\nAcademic integrity: Please refer to the syllabus for the university’s policy on academic integrity"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#software",
+    "href": "lectures/lecture-01/01-introduction.html#software",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Software",
+    "text": "Software\n\n\n\n\nGit: Version control system. Download it here. Instructions for installation here. Feel free to configure it if you wish (instructions here), but we are going to talk about it in class.\nGitHub: Online platform for hosting code repositories. You will use it a lot, and not only for this class. Create an account on GitHub and register for a student/educator discount.\nThere is a series of tutorials available on our course website on how to set up Git and GitHub: https://danilofreire.github.io/qtm350/tutorials/tutorials.html"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#os-extras",
+    "href": "lectures/lecture-01/01-introduction.html#os-extras",
+    "title": "Welcome to Data Science Computing!",
+    "section": "OS extras",
+    "text": "OS extras\n\n\n\n\nWindows: Install Bash for Windows. Another good tutorial can be found here. You might also want to install Chocolatey (they offer a free and open-source version)\nMac: Install Homebrew and Oh My Zsh\nLinux: None (you should be good to go)"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#other-tools",
+    "href": "lectures/lecture-01/01-introduction.html#other-tools",
+    "title": "Welcome to Data Science Computing!",
+    "section": "Other tools",
+    "text": "Other tools\n\n\n\n\nWe will have time to install other tools during the course. But if you want to get ahead, you can install the following:\nVS Code: Code editor. Download it here\nAnaconda: Python distribution. Download it here\nDocker: Containerisation tool. Download it here\nPostgreSQL: Database management system. Download it here\n\n\n\n\n\nTutorials for these tools are available on our course website: https://danilofreire.github.io/qtm350/tutorials/tutorials.html"
   }
 ]
