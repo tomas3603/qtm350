@@ -814,35 +814,28 @@
   {
     "objectID": "assignments/assignments.html",
     "href": "assignments/assignments.html",
-    "title": "Assignments, In-Class Quizzes, and Final Project",
+    "title": "Assignments",
     "section": "",
-    "text": "This repository contains materials for assignments, in-class quizzes, and final project instructions. The course assessment comprises:\nThe final project will be a group effort, with a maximum of 3 students per group. Detailed instructions will be provided soon."
-  },
-  {
-    "objectID": "assignments/assignments.html#assignments",
-    "href": "assignments/assignments.html#assignments",
-    "title": "Assignments, In-Class Quizzes, and Final Project",
-    "section": "Assignments",
-    "text": "Assignments\nAssignment submissions are typically due on Wednesdays at 11:59pm in the week following their publication. You may submit via Canvas (preferred) or email (danilo.freire@emory.edu).\nWe encourage you to complete assignments in Jupyter Notebooks. However, submissions in Quarto PDF format or Word are acceptable, provided that code and results are included in the same document.\nYou will find the assignments in .ipynb format in the assignments folder on the course repository. For your convenience, rendered versions are available on the course website; links are provided below.\nWhen submitting, please name your files as follows: qtm350-assignment-01-your-name.ipynb. For instance: qtm350-assignment-01-john-doe.ipynb."
+    "text": "Here you will find information about the assignments for QTM 350. There are ten of them, each worth 5% of your final grade. The assignments are designed to help you practice the concepts covered in class and to develop your data science skills.\nAssignment submissions are typically due on Wednesdays at 11:59pm in the week following their publication. You may submit via Canvas (preferred) or email (danilo.freire@emory.edu).\nWe encourage you to complete assignments in Jupyter Notebooks. However, submissions in Quarto PDF format or Word are acceptable, provided that code and results are included in the same document.\nYou will find the assignments in .ipynb format in the assignments folder on the course repository. For your convenience, rendered versions are available on the course website; links are provided below.\nWhen submitting, please name your files as follows: assignment-01-your-name.ipynb. For instance: assignment-01-john-doe.ipynb."
   },
   {
     "objectID": "assignments/assignments.html#assignment-timeline",
     "href": "assignments/assignments.html#assignment-timeline",
-    "title": "Assignments, In-Class Quizzes, and Final Project",
+    "title": "Assignments",
     "section": "Assignment Timeline",
     "text": "Assignment Timeline\n\n\n\nSession\nTopic\nAssignment\nSubmission Deadline\n\n\n\n\n02\nComputational Literacy\nAssignment 01\n2024-09-11"
   },
   {
     "objectID": "assignments/assignments.html#in-class-quizzes",
     "href": "assignments/assignments.html#in-class-quizzes",
-    "title": "Assignments, In-Class Quizzes, and Final Project",
+    "title": "Assignments",
     "section": "In-Class Quizzes",
-    "text": "In-Class Quizzes\nIn-class quizzes will be held on Wednesdays. They will be based on the material covered in the previous weeks. The quizzes will be open-book and open-notes, but you will not be allowed communicate with others during the quiz."
+    "text": "In-Class Quizzes\nIn-class quizzes will be held on Wednesdays. They will be based on the material covered in the previous weeks. The quizzes will be open-book and open-notes, but you will not be allowed communicate with others during the quiz. They will be available in the quizzes folder on the course repository."
   },
   {
     "objectID": "assignments/assignments.html#final-project",
     "href": "assignments/assignments.html#final-project",
-    "title": "Assignments, In-Class Quizzes, and Final Project",
+    "title": "Assignments",
     "section": "Final Project",
     "text": "Final Project\nThe final project will be a group effort, with a maximum of 3 students per group. Detailed instructions will be provided soon."
   },
