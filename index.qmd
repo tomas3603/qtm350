@@ -43,11 +43,11 @@ The course covers the following topics, with corresponding lecture
 materials available in the [lectures
 folder](https://github.com/danilofreire/qtm350/tree/main/lectures):
 
-- Wednesday, August 28: [Lecture 01: Welcome to QTM 350 - Introduction](https://danilofreire.github.io/qtm350/lectures/lecture-01/01-introduction.html). [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://danilofreire.github.io/qtm350/tutorials/tutorials.html).
+- Wednesday, August 28: [Lecture 01: Welcome to QTM 350 - Introduction](https://danilofreire.github.io/qtm350/lectures/lecture-01/01-introduction.html) and [Course Tutorials](https://danilofreire.github.io/qtm350/tutorials/tutorials.html).
 
 - Monday, September 02: Labour Day (no class)
 
-- Wednesday, September 04: [Lecture 02: GitHub Review](https://danilofreire.github.io/qtm350/lectures/lecture-02/02-github-review.html) and [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm350/blob/main/lectures/lecture-02/02-jupyter.ipynb)
+- Wednesday, September 04: [Lecture 02: Computational Literacy](https://danilofreire.github.io/qtm350/lectures/lecture-02/02-computational-literacy.html).
   - **Assignment 01:** [Problem Set 01](https://github.com/danilofreire/qtm350/blob/main/assignments/01-assignment.ipynb)
 
 - Monday, September 09: [Lecture 03: Variables and Lists](https://github.com/danilofreire/qtm350/blob/main/lectures/lecture-03/03-variables-lists.ipynb)

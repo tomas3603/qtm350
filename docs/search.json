@@ -340,7 +340,7 @@
     "href": "index.html#course-content",
     "title": "QTM 350 - Data Science Computing",
     "section": "Course Content",
-    "text": "Course Content\n\nLectures (Tentative Schedule)\nThe course covers the following topics, with corresponding lecture materials available in the lectures folder:\n\nWednesday, August 28: Lecture 01: Welcome to QTM 350 - Introduction. Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nMonday, September 02: Labour Day (no class)\nWednesday, September 04: Lecture 02: GitHub Review and Introduction to Jupyter Notebooks\n\nAssignment 01: Problem Set 01\n\nMonday, September 09: Lecture 03: Variables and Lists\nWednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers\n\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nMonday, September 16: Lecture 05: Boolean Variables and If/Else Statements\nWednesday, September 18: Lecture 06: While Loops and For Loops\n\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nMonday, September 23: Lecture 07: Applications 1: Simulation Studies\nWednesday, September 25: Lecture 08: Functions and Arguments\n\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nMonday, September 30: Lecture 09: Global and Local Variables\nWednesday, October 02: Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nMonday, October 07: Lecture 11: Subsetting Data\nWednesday, October 09: Lecture 12: Application 03: Linear Models\n\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nMonday, October 14: Fall Break (no class)\nWednesday, October 16: Lecture 13: Creating and Replacing Variables\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nMonday, October 21: Lecture 14: Quiz 2: Application 4: Random Assignment (6%)\nWednesday, October 23: Lecture 15: Aggregating Data\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nMonday, October 28: Lecture 16: Merging Data\nWednesday, October 30: Lecture 17: Introduction to SQL\n\nAssignment 08 due (5%)\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nMonday, November 04: Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nWednesday, November 06: Lecture 19: Import SQL Data into Python\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nMonday, November 11: Lecture 20: Merging Tables in SQL\nWednesday, November 13: Lecture 21: Time Series Analysis\n\nAssignment 10 due (5%)\n\nMonday, November 18: Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nWednesday, November 20: Lecture 23: Pivot Tables\nMonday, November 25: Lecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nWednesday, November 27: Thanksgiving Break (no class)\nMonday, December 02: Lecture 25: Manipulating Text Data\nWednesday, December 04: Lecture 26: Advanced Plots\nMonday, December 09: Final Project due (20%)\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. These will be posted in the respective assignments/ and quizzes/ folders as the course progresses. We will also announce these in class and on Canvas. Please refer to the syllabus for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ folder contains step-by-step guides for various tools and techniques used in the course. These include:\n\nVSCode and Anaconda Tutorial\nJupyter Notebook and Markdown Tutorial\nGitHub Tutorial\nPostgreSQL Tutorial"
+    "text": "Course Content\n\nLectures (Tentative Schedule)\nThe course covers the following topics, with corresponding lecture materials available in the lectures folder:\n\nWednesday, August 28: Lecture 01: Welcome to QTM 350 - Introduction and Course Tutorials.\nMonday, September 02: Labour Day (no class)\nWednesday, September 04: Lecture 02: Computational Literacy.\n\nAssignment 01: Problem Set 01\n\nMonday, September 09: Lecture 03: Variables and Lists\nWednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers\n\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nMonday, September 16: Lecture 05: Boolean Variables and If/Else Statements\nWednesday, September 18: Lecture 06: While Loops and For Loops\n\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nMonday, September 23: Lecture 07: Applications 1: Simulation Studies\nWednesday, September 25: Lecture 08: Functions and Arguments\n\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nMonday, September 30: Lecture 09: Global and Local Variables\nWednesday, October 02: Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nMonday, October 07: Lecture 11: Subsetting Data\nWednesday, October 09: Lecture 12: Application 03: Linear Models\n\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nMonday, October 14: Fall Break (no class)\nWednesday, October 16: Lecture 13: Creating and Replacing Variables\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nMonday, October 21: Lecture 14: Quiz 2: Application 4: Random Assignment (6%)\nWednesday, October 23: Lecture 15: Aggregating Data\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nMonday, October 28: Lecture 16: Merging Data\nWednesday, October 30: Lecture 17: Introduction to SQL\n\nAssignment 08 due (5%)\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nMonday, November 04: Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nWednesday, November 06: Lecture 19: Import SQL Data into Python\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nMonday, November 11: Lecture 20: Merging Tables in SQL\nWednesday, November 13: Lecture 21: Time Series Analysis\n\nAssignment 10 due (5%)\n\nMonday, November 18: Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nWednesday, November 20: Lecture 23: Pivot Tables\nMonday, November 25: Lecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nWednesday, November 27: Thanksgiving Break (no class)\nMonday, December 02: Lecture 25: Manipulating Text Data\nWednesday, December 04: Lecture 26: Advanced Plots\nMonday, December 09: Final Project due (20%)\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. These will be posted in the respective assignments/ and quizzes/ folders as the course progresses. We will also announce these in class and on Canvas. Please refer to the syllabus for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ folder contains step-by-step guides for various tools and techniques used in the course. These include:\n\nVSCode and Anaconda Tutorial\nJupyter Notebook and Markdown Tutorial\nGitHub Tutorial\nPostgreSQL Tutorial"
   },
   {
     "objectID": "index.html#course-requirements",
@@ -795,7 +795,7 @@
     "href": "lectures/lectures.html#schedule",
     "title": "Lectures",
     "section": "Schedule",
-    "text": "Schedule\n\nWednesday, August 28: Lecture 01: Welcome to QTM 151 - Introduction. Please make sure to install the necessary software for the course by following the Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nMonday, September 02: Labour Day (no class)\nWednesday, September 04: Lecture 02: GitHub Review and Introduction to Jupyter Notebooks\n\nAssignment 01: Problem Set 01\n\nMonday, September 09: Lecture 03: Variables and Lists\nWednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers\n\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nMonday, September 16: Lecture 05: Boolean Variables and If/Else Statements\nWednesday, September 18: Lecture 06: While Loops and For Loops\n\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nMonday, September 23: Lecture 07: Applications 1: Simulation Studies\nWednesday, September 25: Lecture 08: Functions and Arguments\n\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nMonday, September 30: Lecture 09: Global and Local Variables\nWednesday, October 02: Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nMonday, October 07: Lecture 11: Subsetting Data\nWednesday, October 09: Lecture 12: Application 03: Linear Models\n\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nMonday, October 14: Fall Break (no class)\nWednesday, October 16: Lecture 13: Creating and Replacing Variables\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nMonday, October 21: Lecture 14: Quiz 2: Application 4: Random Assignment (6%)\nWednesday, October 23: Lecture 15: Aggregating Data\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nMonday, October 28: Lecture 16: Merging Data\nWednesday, October 30: Lecture 17: Introduction to SQL\n\nAssignment 08 due (5%)\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nMonday, November 04: Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nWednesday, November 06: Lecture 19: Import SQL Data into Python\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nMonday, November 11: Lecture 20: Merging Tables in SQL\nWednesday, November 13: Lecture 21: Time Series Analysis\n\nAssignment 10 due (5%)\n\nMonday, November 18: Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nWednesday, November 20: Lecture 23: Pivot Tables\nMonday, November 25: Lecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nWednesday, November 27: Thanksgiving Break (no class)\nMonday, December 02: Lecture 25: Manipulating Text Data\nWednesday, December 04: Lecture 26: Advanced Plots\nMonday, December 09: Final Project due (20%)\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture."
+    "text": "Schedule\n\nWednesday, August 28: Lecture 01: Welcome to QTM 151 - Introduction. Please make sure to install the necessary software for the course by following the Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nMonday, September 02: Labour Day (no class)\nWednesday, September 04: Lecture 02: Computational Literacy.\n\nAssignment 01: Problem Set 01\n\nMonday, September 09: Lecture 03: Variables and Lists\nWednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers\n\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nMonday, September 16: Lecture 05: Boolean Variables and If/Else Statements\nWednesday, September 18: Lecture 06: While Loops and For Loops\n\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nMonday, September 23: Lecture 07: Applications 1: Simulation Studies\nWednesday, September 25: Lecture 08: Functions and Arguments\n\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nMonday, September 30: Lecture 09: Global and Local Variables\nWednesday, October 02: Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nMonday, October 07: Lecture 11: Subsetting Data\nWednesday, October 09: Lecture 12: Application 03: Linear Models\n\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nMonday, October 14: Fall Break (no class)\nWednesday, October 16: Lecture 13: Creating and Replacing Variables\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nMonday, October 21: Lecture 14: Quiz 2: Application 4: Random Assignment (6%)\nWednesday, October 23: Lecture 15: Aggregating Data\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nMonday, October 28: Lecture 16: Merging Data\nWednesday, October 30: Lecture 17: Introduction to SQL\n\nAssignment 08 due (5%)\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nMonday, November 04: Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nWednesday, November 06: Lecture 19: Import SQL Data into Python\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nMonday, November 11: Lecture 20: Merging Tables in SQL\nWednesday, November 13: Lecture 21: Time Series Analysis\n\nAssignment 10 due (5%)\n\nMonday, November 18: Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nWednesday, November 20: Lecture 23: Pivot Tables\nMonday, November 25: Lecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nWednesday, November 27: Thanksgiving Break (no class)\nMonday, December 02: Lecture 25: Manipulating Text Data\nWednesday, December 04: Lecture 26: Advanced Plots\nMonday, December 09: Final Project due (20%)\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture."
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#what-about-you-time-permitting",
@@ -998,7 +998,7 @@
     "href": "lectures/lecture-01/01-introduction.html#os-extras",
     "title": "Welcome to Data Science Computing!",
     "section": "OS extras",
-    "text": "OS extras\n\n\n\n\nWindows: Install Bash for Windows. Another good tutorial can be found here. You might also want to install Chocolatey (they offer a free and open-source version)\nMac: Install Homebrew and Oh My Zsh\nLinux: None (you should be good to go)"
+    "text": "OS extras\n\n\n\n\nWindows: Please install Windows Subsystem for Linux (bash). Another good tutorial can be found here. FAQ available here.\n\nTip: VS Code is a great code editor for Windows and it already includes a terminal\n\nMac: None, but you can install iTerm2, Homebrew and Oh My Zsh for a better experience\nLinux: None, you should be good to go"
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#other-tools",
@@ -1006,5 +1006,369 @@
     "title": "Welcome to Data Science Computing!",
     "section": "Other tools",
     "text": "Other tools\n\n\n\n\nWe will have time to install other tools during the course. But if you want to get ahead, you can install the following:\nVS Code: Code editor. Download it here\nAnaconda: Python distribution. Download it here\nDocker: Containerisation tool. Download it here\nPostgreSQL: Database management system. Download it here\n\n\n\n\n\nTutorials for these tools are available on our course website: https://danilofreire.github.io/qtm350/tutorials/tutorials.html"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#course-information",
+    "href": "lectures/lecture-02/02-computational-literacy.html#course-information",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Course information",
+    "text": "Course information\n\n\n\n\n danilo.freire@emory.edu\n https://danilofreire.github.io/qtm350\n https://github.com/danilofreire/qtm350\n\n\n\nInstructor: Danilo Freire\nLectures: Mondays and Wednesdays, 2:30-3:45pm\nOffice hours: At any time, just send me an email in advance\nPlease remember to check the course repository regularly for updates and announcements 😉"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#course-information-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#course-information-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Course information",
+    "text": "Course information\n\n\n\n\n\n\n\n\nThe course focuses on three key areas of data science: reliability, reproducibility, and robustness\nMain topics: command line and shell scripting (terminal), version control (git and GitHub), reproducible reports (Quarto and Jupyter Notebooks), data wrangling and storage (Python and SQL), data visualisation (Python), AI-paired programming (Copilot), introduction to containers (Docker), and parallel computing (Python)\n\n\n\n\n\nGrading:\n\n50% assignments (10x)\n30% in-class quizzes (5x)\n20% final project\n\n\n\n\n\n\nYou can discuss assignments with your classmates, but please submit your own work\nAI is allowed in all assignments and quizzes\nLate submissions will be penalised by 10% per day\nTo accommodate any challenges, I will drop the lowest assignment and quiz grades\nAdditional information will be made available on the course repository"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#learning-objectives",
+    "href": "lectures/lecture-02/02-computational-literacy.html#learning-objectives",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nBy the end of this lecture, you will be able to:\n\n\n\n\nLearn how computers work from the ground up, starting with binary code\nGet familiar with other key computer encodings like hexadecimal, ASCII, and Unicode\nLearn about the pioneers of computing and the development of Assembly language\nUnderstand the difference between low-level and high-level programming languages and when to use each"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#software-installation",
+    "href": "lectures/lecture-02/02-computational-literacy.html#software-installation",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Software installation",
+    "text": "Software installation\n\n\n\n\n\n\n\nAs we discussed in the first lecture, you will need to install the following software:\nA terminal\n\nYou can install WSL if you are using Windows. Or you can use VS Code’s built-in terminal\nMac users already have a terminal. I suggest you install iTerm2, Homebrew and Oh My Zsh for a better experience\nLinux users are good to go\n\n\n\n\nGit\nGitHub\nAnaconda (or regular Python)\nQuarto\nPostgreSQL\nDocker\nVS Code (optional, but strongly recommended)\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nPlease check the installation tutorials for more information\nIf you have any questions, please let me know!"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#section",
+    "href": "lectures/lecture-02/02-computational-literacy.html#section",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "",
+    "text": "Comp. Literacy"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#computers-run-on-0s-and-1s",
+    "href": "lectures/lecture-02/02-computational-literacy.html#computers-run-on-0s-and-1s",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Computers run on 0s and 1s",
+    "text": "Computers run on 0s and 1s\n\n\n\n\n\n\n\nComputers represent everything by using 0s and 1s\nTransistors act as switches, with 1 for high voltage level and 0 for low voltage level\nComputers use binary because transistors are easy to fabricate in silicon and can be densely packed on a chip\n\n\n\nBut how does this work?\nHow can we represent text, images, and videos using only 0s and 1s?\nThis leads us to abstraction: representing ideas at different levels of detail by identifying what is essential\nWe will use abstraction to translate 0s and 1s to decimal numbers, then translate those numbers to other types"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#abstraction-is-about-representing-complex-ideas-in-simpler-ways",
+    "href": "lectures/lecture-02/02-computational-literacy.html#abstraction-is-about-representing-complex-ideas-in-simpler-ways",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Abstraction is about representing complex ideas in simpler ways",
+    "text": "Abstraction is about representing complex ideas in simpler ways\n\n\n\n\n\n\n\nAbstraction is the concept of representing ideas at different levels of detail by identifying what is essential\nWe will use abstraction to translate 0s and 1s to decimal numbers, then translate those numbers to other types\n\n\n\n\n\nComp. Literacy"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#the-first-computers",
+    "href": "lectures/lecture-02/02-computational-literacy.html#the-first-computers",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "The first computers",
+    "text": "The first computers\n\n\n\n\n\n\nHistorically, a computer was a person who makes calculations, especially with a calculating machine\nTo do calculations we use numbers. How to represent them?\n\nFingers\nPebbles\nStrings (Inca Khipu)\nAbacus\n\n\n\n\n Video: How to use an abacus"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#four-species-mechanical-calculators",
+    "href": "lectures/lecture-02/02-computational-literacy.html#four-species-mechanical-calculators",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Four-species mechanical calculators",
+    "text": "Four-species mechanical calculators\n\n\n\n\n\n\n\n\nThe first mechanical calculator capable of performing all four basic arithmetic operations (addition, subtraction, multiplication, and division)\nInvented by Gottfried Wilhelm Leibniz in 1694\nIf you took a statistics course before the late 1970s, you likely used this type of mechanical calculator for your computations"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#silicon-microchip-computers",
+    "href": "lectures/lecture-02/02-computational-literacy.html#silicon-microchip-computers",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Silicon microchip computers",
+    "text": "Silicon microchip computers"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#silicon-based-computers",
+    "href": "lectures/lecture-02/02-computational-literacy.html#silicon-based-computers",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Silicon-based computers",
+    "text": "Silicon-based computers\n\n\n\n\n\n\n\n\nThe 1970s marked the transition from mechanical to electronic:\n\n\nTransistors act as switches for electronic signals\nIntegrated circuits combine multiple transistors on a single chip\nMicroprocessors are integrated circuits that contain the functions of a computer’s central processing unit (CPU)\nThey follow the Von Neumann architecture"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#von-neumann-architecture",
+    "href": "lectures/lecture-02/02-computational-literacy.html#von-neumann-architecture",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Von Neumann Architecture",
+    "text": "Von Neumann Architecture\n\n\n\n\n\n\n\n\n\nThe Von Neumann Architecture stores both program instructions and data together in a slow storage medium, such as a hard disk, and transfers them to faster RAM for execution by the CPU\nThis is the basis for almost all modern computers\nWhen proposed in 1945, this architecture was revolutionary, as programs were previously seen as part of the machine, distinct from the data they operated on"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#von-neumann-architecture-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#von-neumann-architecture-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Von Neumann Architecture",
+    "text": "Von Neumann Architecture\n\n\n\n\n\n\n\n\n\nAdvantages:\n\nEfficient memory use, with less need for separate areas\nFlexibility in data storage and manipulation\nSimplicity in design and operation\n\nDisadvantages:\n\nVon Neumann bottleneck: Limits computing performance due to sequential processing of instructions and data through a single bus\nThe CPU often waits for data due to its faster processing speed compared to memory transfer rates\nHarvard architecture is an alternative that separates data and instruction memory"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#converting-coins-to-dollars",
+    "href": "lectures/lecture-02/02-computational-literacy.html#converting-coins-to-dollars",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Converting coins to dollars",
+    "text": "Converting coins to dollars\n\n\n\n\n\n\n\n\n\nWe can convert between number systems by translating a value from one system to the other\nFor example, the coins on the left represent the same value as $0.87\nUsing pictures is clunky. Let’s make a new representation system for coins"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#converting-coins-to-dollars-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#converting-coins-to-dollars-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Converting coins to dollars",
+    "text": "Converting coins to dollars\n\n\n\n\n\n\n\n\n\nTo represent coins, we will make a number with four digits\nThe first represents quarters, the second dimes, the third nickels, and the fourth pennies\n\nc3102 =\n3 x $0.25 + 1 x $0.10 + 0 x $0.05 + 2 x $0.01 =\n$0.87"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#converting-dollars-to-coins",
+    "href": "lectures/lecture-02/02-computational-literacy.html#converting-dollars-to-coins",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Converting dollars to coins",
+    "text": "Converting dollars to coins\n\n\n\n\n\n\n\n\n\nHow do we convert money from dollars to coins? Assume we want to minimise the number of coins used\nFor example, what is $0.59 in coin representation? Use the same four-digit system: quarters, dimes, nickels, and pennies\n$0.59 = 2 x $0.25 + 0 x $0.10 + 1 x $0.05 + 4 x $0.01 = c2014"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#quick-activity",
+    "href": "lectures/lecture-02/02-computational-literacy.html#quick-activity",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Quick activity!",
+    "text": "Quick activity!\n\n\n\n\n\n\nThink-Pair-Share: do the following conversions\nWhat is c1112 in dollars?\nWhat is $0.61 in coin representation?\n\n\n\n\nSolutions:\n\nc1112 = $0.42 = 1 x $0.25 + 1 x $0.10 + 1 x $0.05 + 2 x $0.01\n$0.61 = c2101 = 2 x $0.25 + 1 x $0.10 + 0 x $0.05 + 1 x $0.01"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#number-systems-binary",
+    "href": "lectures/lecture-02/02-computational-literacy.html#number-systems-binary",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Number systems – binary",
+    "text": "Number systems – binary\n\n\n\n\n\n\nNow let us go back to computers! 💻\nWe can represent numbers using only 0s and 1s with the binary number system\nInstead of counting the number of 1s, 5s, 10s, and 25s coins you need, count the number of 1s, 2s, 4s, 8s, etc\nWhy these numbers? They are powers of 2. This is a number in base 2\nA single binary digit is a bit, e.g., 101 has three bits\nAn 8-bit group is called a byte, e.g., 10101010\nBinary numbers grow as follows:\n\n0 represents zero\n1 represents one\n10 represents two\n100 represents four\n1000 represents eight, and so on…"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#quick-questions",
+    "href": "lectures/lecture-02/02-computational-literacy.html#quick-questions",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Quick questions!",
+    "text": "Quick questions!\n\n\n\n\n\n\nThink-Pair-Share: do the following conversions\nWhat is c1112 in dollars?\nWhat is $0.61 in coin representation?\n\n\n\n\nSolutions:\n\nc1112 = $0.42 = 1 x $0.25 + 1 x $0.10 + 1 x $0.05 + 2 x $0.01\n$0.61 = c2101 = 2 x $0.25 + 1 x $0.10 + 0 x $0.05 + 1 x $0.01"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#quick-question",
+    "href": "lectures/lecture-02/02-computational-literacy.html#quick-question",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Quick question!",
+    "text": "Quick question!\n\n\n\n\nThink-Pair-Share: what is the binary representation of the decimal number 3?\n\n\n\n101\n\n\n\n\n\n11\n\n\n\n\n\n111\n\n\n\n\n010"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#your-turn",
+    "href": "lectures/lecture-02/02-computational-literacy.html#your-turn",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Your turn!",
+    "text": "Your turn!\nPractice Exercise 01:\n\nWhat binary number represents 5?\nWhat binary number represents 7?\nWhat binary number represents 9?\nWhat binary number represents 11?"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#counting-in-binary",
+    "href": "lectures/lecture-02/02-computational-literacy.html#counting-in-binary",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Counting in Binary",
+    "text": "Counting in Binary"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#convert-binary-to-decimal",
+    "href": "lectures/lecture-02/02-computational-literacy.html#convert-binary-to-decimal",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Convert binary to decimal",
+    "text": "Convert binary to decimal\n\n\n\nTo convert a binary number to decimal, just add each power of 2 that is represented by a 1.\n\n\nFor example, 00011000 = 16 + 8 = 24\n\n\n\n\n128\n64\n32\n16\n8\n4\n2\n1\n\n\n\n\n0\n0\n0\n1\n1\n0\n0\n0\n\n\n\n\n\nAnother example: 10010001 = 128 + 16 + 1 = 145\n\n\n\n\n128\n64\n32\n16\n8\n4\n2\n1\n\n\n\n\n1\n0\n0\n1\n0\n0\n0\n1"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#machine-code",
+    "href": "lectures/lecture-02/02-computational-literacy.html#machine-code",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Machine Code",
+    "text": "Machine Code\n\n\n\n\n\n\n\n\nMachine code or binary code is binary instructions that a CPU reads and executes, such as: 10001000 01010111 11000101 11110001 10100001 00010110.\nEarly programming was done directly in machine code!"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#characters-and-glyphs",
+    "href": "lectures/lecture-02/02-computational-literacy.html#characters-and-glyphs",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Characters and Glyphs",
+    "text": "Characters and Glyphs\n\n\n\n\n\n\n\n\nA character is the smallest component of text, like A, B, or /.\nA glyph is the graphical representation of a character.\nIn programming, the display of glyphs is typically handled by GUI (Graphical User Interface) toolkits or font renderers."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#binary-and-abstraction-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#binary-and-abstraction-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Binary and abstraction",
+    "text": "Binary and abstraction\n\n\nNow that we can represent numbers using binary, we can represent everything computers store using binary\nWe just need to use abstraction to interpret bits or numbers in particular ways\nLet us consider colours, images, and text"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#images-as-collections-of-colours",
+    "href": "lectures/lecture-02/02-computational-literacy.html#images-as-collections-of-colours",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Images as collections of colours",
+    "text": "Images as collections of colours\n\n\n\n\n\n\n\n\n\n\nWhat if we want to represent an image? How can we convert that to numbers?\nFirst, break the image down into a grid of colours, where each dot of color has a distinct hue\nA dot of color in this context is called a pixel\nNow we just need to represent a single color (a pixel) as a number!"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#images-as-collections-of-colours-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#images-as-collections-of-colours-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Images as collections of colours",
+    "text": "Images as collections of colours\nRGB colour model\n\n\n\n\n\n\n\n\n\n\nThe RGB colour model is widely used in digital displays\nEach pixel is represented by three numbers, each ranging from 0 to 255\nThe first number represents the amount of red, the second the amount of green, and the third the amount of blue\n00000000 is no r/g/b and 11111111 is very r/g/b!\nYou can try different colours here"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#number-systems-hexadecimal",
+    "href": "lectures/lecture-02/02-computational-literacy.html#number-systems-hexadecimal",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Number systems – Hexadecimal",
+    "text": "Number systems – Hexadecimal\nWhat is hexadecimal?\n\n\n\n\n\n\n\n\n\n\nWhen we represent values with multiple bytes, it can be hard to distinguish where numbers begin and end\nHexadecimal is a number system with 16 digits: 0123456789ABCDEF\nIt is used to represent binary numbers in a more compact way\nEach hex digit corresponds to 4 binary bits, making it a shorthand for binary:\n\n0000 = 0\n0001 = 1\n0010 = 2\n…\n1110 = E\n1111 = F"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#binary-to-hex-conversion",
+    "href": "lectures/lecture-02/02-computational-literacy.html#binary-to-hex-conversion",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Binary to hex conversion",
+    "text": "Binary to hex conversion\n\n\n\n\nConvert binary to hex by grouping into blocks of four bits.\nExample: Binary 1001 1110 0000 1010 converts to Hex 9E0A.\n\n\n\nPractice Exercise 02:\n\nConvert the decimal number 13 to binary.\nConvert the decimal number 13 to hexadecimal."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#sec-solution01",
+    "href": "lectures/lecture-02/02-computational-literacy.html#sec-solution01",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Solution - Practice Exercise 01",
+    "text": "Solution - Practice Exercise 01\n\n\nWhat binary number represents 5?\n\n\nIn binary, the number 5 is represented as 101, which equates to \\((1 \\times 2^2) + (0 \\times 2^1) + (1 \\times 2^0)\\).\n\n\nWhat binary number represents 7?\n\n\nIn binary, the number 7 is represented as 111, which equates to \\((1 \\times 2^2) + (1 \\times 2^1) + (1 \\times 2^0)\\).\n\n\nWhat binary number represents 9?\n\n\nIn binary, the number 9 is represented as 1001, which equates to \\((1 \\times 2^3) + (0 \\times 2^2) + (0 \\times 2^1) + (1 \\times 2^0)\\).\n\n\nWhat binary number represents 11?\n\n\nIn binary, the number 11 is represented as 1011, which equates to \\((1 \\times 2^3) + (0 \\times 2^2) + (1 \\times 2^1) + (1 \\times 2^0)\\)."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#sec-solution02",
+    "href": "lectures/lecture-02/02-computational-literacy.html#sec-solution02",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Solution - Practice Exercise 02",
+    "text": "Solution - Practice Exercise 02\n\n\nDecimal 13 is 1101 in binary.\n\n\nBreak it down: \\(13 = (1 \\times 2^3) + (1 \\times 2^2) + (0 \\times 2^1) + (1 \\times 2^0)\\).\n\n\nBinary 1101 is D in hexadecimal.\n\n\nGroup the binary into blocks of four: 1101.\nConvert each block to hex: 1101 (binary) = D (hex).\nLet’s take a closer look at how to convert the binary number 1101 to hexadecimal:\nStart with the binary number: 1101\nConvert it to decimal by summing the powers of 2:\n\n\\(1 \\times 2^3\\) = 8\n\\(1 \\times 2^2\\) = 4\n\\(0 \\times 2^1\\) = 0\n\\(1 \\times 2^0\\) = 1\n\nAdd the decimal values: \\(8 + 4 + 0 + 1 = 13\\)\nThe decimal number 13 corresponds to the hexadecimal number D.\nTherefore, binary 1101 is D in hexadecimal."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#hex-and-html",
+    "href": "lectures/lecture-02/02-computational-literacy.html#hex-and-html",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Hex and HTML",
+    "text": "Hex and HTML\nHexadecimal in HTML\n\n\nHTML uses hexadecimal to represent colours\nSix-digit hex numbers specify colours:\n\nFFFFFF = White\n000000 = Black\n\nEach pair of digits represents a colour component (RGB).\nEach color channel typically has a range from 0 to 255 (in 8-bit systems), which gives a total of 256 intensity levels for each primary color.\nWhen you combine the three channels, you get a possible color palette of \\(256^3\\) or about 16.7 million colours"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#hexadecimal-and-html",
+    "href": "lectures/lecture-02/02-computational-literacy.html#hexadecimal-and-html",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Hexadecimal and HTML",
+    "text": "Hexadecimal and HTML\nHex and RGB\n\n\nHTML uses hexadecimal to represent colours\nSix-digit hex numbers specify colours:\n\nFFFFFF = White\n000000 = Black\n\nEach pair of digits represents a colour component (RGB).\nEach color channel typically has a range from 0 to 255 (in 8-bit systems), which gives a total of 256 intensity levels for each primary color.\nWhen you combine the three channels, you get a possible color palette of \\(256^3\\) or about 16.7 million colours"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#represent-text-as-individual-characters",
+    "href": "lectures/lecture-02/02-computational-literacy.html#represent-text-as-individual-characters",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Represent text as individual characters",
+    "text": "Represent text as individual characters\nCharacters and glyphs\n\n\n\n\n\n\n\n\n\n\nNext, how do we represent text?\nFirst, we break it down into smaller parts, like with images. In this case, we can break text down into individual characters\nA character is the smallest component of text, like A, B, or /.\nA glyph is the graphical representation of a character.\nIn programming, the display of glyphs is typically handled by GUI (Graphical User Interface) toolkits or font renderers"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#represent-text-as-individual-characters-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#represent-text-as-individual-characters-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Represent text as individual characters",
+    "text": "Represent text as individual characters\nLookup tables\n\n\n\n\n\n\n\n\n\n\nFor example, the text “Hello World” becomes H, e, l, l, o, space, W, o, r, l, d\nUnlike colours, characters do not have a logical connection to numbers\nTo represent characters as numbers, we use a lookup table called ASCII\nASCII stands for American Standard Code for Information Interchange\nAs long as every computer uses the same lookup table, computers can always translate a set of numbers into the same set of characters"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#characters-and-glyphs-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#characters-and-glyphs-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Characters and Glyphs",
+    "text": "Characters and Glyphs\n\n\n\n\n\n\n\n\nA character is the smallest component of text, like A, B, or /.\nA glyph is the graphical representation of a character.\nIn programming, the display of glyphs is typically handled by GUI (Graphical User Interface) toolkits or font renderers."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#ascii-is-nothing-but-a-simple-lookup-table",
+    "href": "lectures/lecture-02/02-computational-literacy.html#ascii-is-nothing-but-a-simple-lookup-table",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "ASCII is nothing but a simple lookup table",
+    "text": "ASCII is nothing but a simple lookup table\nYes, really!\n\n\n\n\n\nFor basic characters, we can use the encoding system called ASCII. This maps the numbers 0 to 255 to characters. Therefore, one character is represented by one byte\nCheck it out here: ASCII Table"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#ascii-is-nothing-but-a-simple-lookup-table-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#ascii-is-nothing-but-a-simple-lookup-table-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "ASCII is nothing but a simple lookup table",
+    "text": "ASCII is nothing but a simple lookup table\nTranslation\n\n\n\n\n\n\n“Hello World” =\n01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#ascii-codes",
+    "href": "lectures/lecture-02/02-computational-literacy.html#ascii-codes",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "ASCII Codes",
+    "text": "ASCII Codes\n\n\nASCII defined numeric codes for various characters, with the numeric values running from 0 to 127. For example, the lowercase letter ‘a’ is assigned 97 as its code value.\nUppercase ‘A’ is represented by the code value 65.\nThe code value 0 is the ‘NUL’ character, also known as the null byte."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#ascii-character-range",
+    "href": "lectures/lecture-02/02-computational-literacy.html#ascii-character-range",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "ASCII Character Range",
+    "text": "ASCII Character Range\n\n\nControl characters: Codes 0 through 31 and 127 are unprintable.\nSpacing character: Code 32 is a nonprinting space.\nGraphic characters: Codes 33 through 126 are printable."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#ascii-limitations",
+    "href": "lectures/lecture-02/02-computational-literacy.html#ascii-limitations",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "ASCII Limitations",
+    "text": "ASCII Limitations\n\n\nASCII only includes unaccented characters.\nLanguages requiring accented characters cannot be represented.\nEven English needs characters like ‘é’ for words such as ‘café’.\n\n\n\nTo address this, Unicode was developed\nUnicode is a superset of ASCII that includes characters from all languages, as well as symbols and emojis\nThe Unicode system represents every character that can be typed into a computer. It uses up to 5 bytes, which can represent up to 1 trillion characters!\nUTF-8 stands for Transformation Format 8-bit\nFind all the Unicode characters here: https://symbl.cc/en/unicode-table/\n\n“Danilo” in Unicode: \\u0044\\u0061\\u006e\\u0069\\u006c\\u006f\n“QTM 350” in Unicode: \\u0051\\u0054\\u004d\\u0020\\u0033\\u0035\\u0030\n\nDecoder: https://symbl.cc/en/tools/decoder/"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#your-turn-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#your-turn-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Your turn!",
+    "text": "Your turn!\nPractice Exercise 03\n\n\n\n\n\n\n\nTranslate the following binary into ASCII text:\n\n01011001 01100001 01111001"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#sec-solution03",
+    "href": "lectures/lecture-02/02-computational-literacy.html#sec-solution03",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Solution - Practice Exercise 03",
+    "text": "Solution - Practice Exercise 03\n\n\nStep 1: Identify the binary strings: 01011001 01100001 01111001\nStep 2: Convert each binary string to its decimal equivalent\n\n01011001 = 89\n01100001 = 97\n01111001 = 121\n\nStep 3: Map each decimal value to its corresponding ASCII character\n\n89 = Y\n97 = a\n121 = y\n\nStep 4: Combine the ASCII characters to form the final text\n\nResult: Yay\n\n\n\n\n\n\nComp. Literacy"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#the-genesis-of-programming",
+    "href": "lectures/lecture-02/02-computational-literacy.html#the-genesis-of-programming",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "The genesis of programming",
+    "text": "The genesis of programming\nZuse’s computers\n\n\n\n\n\n\n\n\n\nKonrad Zuse was a German engineer and computer pioneer\nHe created the first programmable computer, the Z3, in 1941\nThe Z3 was the first computer to use binary arithmetic and read binary instructions from punch tape\nExample: Z4 had 512 bytes of memory\nZuse also created the first high-level programming language, Plankalkül"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#what-is-assembly-language",
+    "href": "lectures/lecture-02/02-computational-literacy.html#what-is-assembly-language",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "What is Assembly language?",
+    "text": "What is Assembly language?\n\n\n\n\n\n\n\n\n\nAssembly language is a low-level programming language that allows writing machine code in human-readable text\nEach instruction corresponds to a single machine code instruction\nThe first assemblers were human!\nProgrammers wrote assembly code, which secretaries transcribed to binary for machine processing"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#what-is-assembly-language-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#what-is-assembly-language-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "What is Assembly language?",
+    "text": "What is Assembly language?\n\n\n\n\n\n\n\n\nMargaret Hamilton and the Apollo 11 code\n\n\n\n\n\nThe Apollo 11 mission to the moon was programmed in assembly language\nThe code is available here: https://github.com/chrislgarry/Apollo-11 (good luck reading it! 😅)"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#some-curious-facts-about-assembly",
+    "href": "lectures/lecture-02/02-computational-literacy.html#some-curious-facts-about-assembly",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Some curious facts about Assembly!",
+    "text": "Some curious facts about Assembly!\n\n\n\n\n\n\n\n\nMargaret Hamilton and the Apollo 11 code\n\n\n\n\n\nThe Apollo 11 mission to the moon was programmed in assembly language\nThe code is available here: https://github.com/chrislgarry/Apollo-11 (good luck reading it! 😅)\nOne of the files is the BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc 🔥 🚀\nBut if Assembly is so fast and efficient, why don’t we use it all the time?"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#low-level-vs-high-level-languages",
+    "href": "lectures/lecture-02/02-computational-literacy.html#low-level-vs-high-level-languages",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Low-level vs high-level languages",
+    "text": "Low-level vs high-level languages\n\n\n\n\n\n\n\nLow-level languages are closer to machine code and are harder to read and write\nHigh-level languages abstract from hardware details and are portable across different systems\n\n\n\n\n\nCompiled Languages: Convert code to binary instructions before execution (e.g., C++, Fortran, Go).\nInterpreted Languages: Run inside a program that interprets and executes commands immediately (e.g., R, Python)."
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#low-level-vs-high-level-languages-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#low-level-vs-high-level-languages-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Low-level vs high-level languages",
+    "text": "Low-level vs high-level languages\nCode that is worth a thousand words\n\n\n\n\n\n\n\n“Hello, World!” in machine code:\n\n\nR&gt; 48 65 6C 6C 6F 2C 20 57 6F 72 6C 64 21 \n\n\n“Hello, World!” in Assembly (x86 Assembly for Linux)\n\n\nR&gt; section .data\n+     message db 'Hello, World!', 10    ; 10 is the ASCII code for newline\n+ \n+ section .text\n+     global _start\n+ \n+ _start:\n+     mov eax, 4          ; system call number for write\n+     mov ebx, 1          ; file descriptor 1 is stdout\n+     mov ecx, message    ; address of string to output\n+     mov edx, 14         ; number of bytes\n+     int 0x80            ; call kernel\n+ \n+     mov eax, 1          ; system call number for exit\n+     xor ebx, ebx        ; exit status 0\n+     int 0x80            ; call kernel\n\n\n\n\n\n“Hello, World!” in Python:\n\n\nR&gt; print(\"Hello, World!\")"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#summary-1",
+    "href": "lectures/lecture-02/02-computational-literacy.html#summary-1",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\nComputational Literacy: Binary and hexadecimal numbers, characters (ASCII, Unicode), and distinction between high vs low-level programming languages\nEarly Computing: Konrad Zuse’s pioneering work with programmable digital computers and the use of binary arithmetic\nAssembly Language: The initial approach to programming using human-readable instructions for machine code\nCalculators: The evolution from Leibniz’s four-species calculating machine to modern electronic computing\nSilicon Microchip Computers: The 1970s revolution with transistors, integrated circuits, and the emergence of Von Neumann architecture\nModern Programming Languages: From low-level assembly languages to high-level languages like Python; distinction between compiled and interpreted languages"
+  },
+  {
+    "objectID": "lectures/lecture-02/02-computational-literacy.html#next-class",
+    "href": "lectures/lecture-02/02-computational-literacy.html#next-class",
+    "title": "QTM 350 - Data Science Computing",
+    "section": "Next class",
+    "text": "Next class\n\n\n\n\n\nWe will learn about the command line and shell scripting in the terminal\nPlease have your WSL or iTerm2 installed, and we will start coding!\nIf you have VS Code, that’s even better! 😉\nPlease check the installation tutorials for more information, and let me know if you have any questions 😃"
   }
 ]
