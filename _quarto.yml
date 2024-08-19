@@ -21,6 +21,8 @@ website:
         text: Lectures
       - href: tutorials/tutorials.qmd
         text: Tutorials
+      - href: assignments/assignments.qmd
+        text: Assignments
       - href: LICENSE.html
         text: " "
   page-footer: 

@@ -128,13 +128,14 @@ The lecture notes cover all the necessary material for the course, and the weekl
 ### Wednesday, August 28:
 
 - Syllabus and course repository: <https://github.com/danilofreire/qtm350>.
-- Lecture 01: [Welcome to QTM 151 - Introduction](https://danilofreire.github.io/qtm350/lectures/lecture-01/01-introduction.html).
+- Lecture 01: [Welcome to QTM 350 - Introduction](https://danilofreire.github.io/qtm350/lectures/lecture-01/01-introduction.html).
 - [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://github.com/danilofreire/qtm350/tutorials).
 
 Weekly suggested readings:
 
-- [DataCamp: SQL vs Python: Which Should You Learn?](https://www.datacamp.com/blog/sql-vs-python-which-to-learn) (Note: *both!*)
-- Cao, L. (2017). [Data Science: A Comprehensive Overview](https://dl.acm.org/doi/pdf/10.1145/3076253). ACM Computing Surveys (CSUR), 50(3), 1-42.
+- Cleveland, W. S. (2001). [Data Science: An Action Plan for Expanding the Technical Areas of the Field of Statistics](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1751-5823.2001.tb00477.x). International Statistical Review, 69(1), 21-26.
+- Donoho, D. (2017). [50 Years of Data Science](https://www.tandfonline.com/doi/full/10.1080/10618600.2017.1384734). Journal of Computational and Graphical Statistics, 26(4), 745-766.
+- Breiman, L. (2001). [Statistical Modeling: The Two Cultures (with Comments and a Rejoinder by the Author)](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full). Statistical Science, 16(3), 199-231.
 - Brady, H. E. (2019). [The Challenge of Big Data and Data Science](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-090216-023229). Annual Review of Political Science, 22(1), 297-323.
 - Zitnik, M., Nguyen, F., Wang, B., Leskovec, J., Goldenberg, A., & Hoffman, M. M. (2019). [Machine Learning for Integrating Data in Biology and Medicine: Principles, Practice, and Opportunities](https://www.sciencedirect.com/science/article/abs/pii/S1566253518304482). Information Fusion, 50, 71-91.
 
@@ -142,15 +143,12 @@ Weekly suggested readings:
 
 ### Wednesday, September 04:
 
-- Lecture 02: [GitHub Review](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-github-review.html) and [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-02/02-jupyter.ipynb).
-- **Assignment 01:** [Problem Set 01](https://github.com/danilofreire/qtm151/blob/main/assignments/01-assignment.ipynb).
+- Lecture 02: [Computational Literacy](https://danilofreire.github.io/qtm350/lectures/lecture-02/02-computational-literacy.html).
+- **Assignment 01:** [Problem Set 01](https://github.com/danilofreire/qtm350/blob/main/assignments/01-assignment.ipynb)
 
 Weekly suggested readings:
 
-- [Microsoft: Jupyter Notebooks in VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Chapter 01: IPython: Beyond Normal Python](https://jakevdp.github.io/PythonDataScienceHandbook/index.html).
-- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 02: Python Language Basics, IPython, and Jupyter Notebooks](https://wesmckinney.com/book/python-basics).
-- [Corey Schafer: Jupyter Notebook Tutorial - Introduction, Setup, and Walkthrough](https://www.youtube.com/watch?v=HW29067qVWk). (Note: Corey Schafer is a great Python instructor on YouTube. Check out his other videos as well.)
+- 
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 
 ## Module 02: Python Data Types and Controlling Flows

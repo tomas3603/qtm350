@@ -8,7 +8,7 @@ folder in our course repository](https://github.com/danilofreire/qtm350/tree/mai
 
 ## Schedule
 
-- Wednesday, August 28: [Lecture 01: Welcome to QTM 151 -
+- Wednesday, August 28: [Lecture 01: Welcome to QTM 350 -
   Introduction](https://danilofreire.github.io/qtm350/lectures/lecture-01/01-introduction.html).
   Please make sure to install the necessary software for the course by
   following the [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and

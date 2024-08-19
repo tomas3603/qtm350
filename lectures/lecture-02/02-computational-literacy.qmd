@@ -814,7 +814,7 @@ Check it out here: [ASCII Table](https://www.asciitable.com/)
 :::
 
 ::: {.column width="40%"}
-:::{style="font-size: 24px; margin-top: 40px;"}
+:::{style="font-size: 22px; margin-top: 40px;"}
 - The [Apollo 11](https://en.wikipedia.org/wiki/Apollo_11) mission to the moon
   was programmed in assembly language
 - The code is available here: <https://github.com/chrislgarry/Apollo-11> (good
@@ -921,12 +921,14 @@ print("Hello, World!")
 :::{style="margin-top:40px;"}
 :::
 
+:::{style="font-size: 24px;"}
 - **Computational Literacy**: Binary and hexadecimal numbers, characters (ASCII, Unicode), and distinction between high vs low-level programming languages
 - **Early Computing**: Konrad Zuse's pioneering work with programmable digital computers and the use of binary arithmetic
 - **Assembly Language**: The initial approach to programming using human-readable instructions for machine code
 - **Calculators**: The evolution from Leibniz’s four-species calculating machine to modern electronic computing
 - **Silicon Microchip Computers**: The 1970s revolution with transistors, integrated circuits, and the emergence of Von Neumann architecture
 - **Modern Programming Languages**: From low-level assembly languages to high-level languages like `Python`; distinction between compiled and interpreted languages
+:::
 
 ## Next class
 
@@ -934,6 +936,7 @@ print("Hello, World!")
 :::
 
 ::::{.incremental}
+:::{style="font-size: 28px;"}
 - We will learn about the [command
   line](https://en.wikipedia.org/wiki/Command-line_interface) and [shell
   scripting](https://en.wikipedia.org/wiki/Shell_script) in the terminal
@@ -943,7 +946,13 @@ print("Hello, World!")
 - Please check the [installation
   tutorials](https://danilofreire.github.io/qtm350/tutorials/tutorials.html)
   for more information, and let me know if you have any questions `r emo::ji('smiley')`
+
+:::{style="margin-top:30px;"}
+:::
+
+- [Assignment 01](https://github.com/danilofreire/qtm350/blob/main/assignments/01-assignment.ipynb) is already online. Please check it out! Due date: 11 September 2024.
 :::  
+::::
 
 # Thank you very much and see you next class! `r emo::ji('smiling_face_with_smiling_eyes')` `r emo::ji('folded_hands')` {background-color="#2d4563"}
 
