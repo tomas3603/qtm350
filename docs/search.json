@@ -1362,13 +1362,13 @@
     "href": "lectures/lecture-02/02-computational-literacy.html#summary-1",
     "title": "QTM 350 - Data Science Computing",
     "section": "Summary",
-    "text": "Summary\n\n\n\n\nComputational Literacy: Binary and hexadecimal numbers, characters (ASCII, Unicode), and distinction between high vs low-level programming languages\nEarly Computing: Konrad Zuse’s pioneering work with programmable digital computers and the use of binary arithmetic\nAssembly Language: The initial approach to programming using human-readable instructions for machine code\nCalculators: The evolution from Leibniz’s four-species calculating machine to modern electronic computing\nSilicon Microchip Computers: The 1970s revolution with transistors, integrated circuits, and the emergence of Von Neumann architecture\nModern Programming Languages: From low-level assembly languages to high-level languages like Python; distinction between compiled and interpreted languages"
+    "text": "Summary\n\n\n\n\n\nComputational Literacy: Binary and hexadecimal numbers, characters (ASCII, Unicode), and distinction between high vs low-level programming languages\nEarly Computing: Konrad Zuse’s pioneering work with programmable digital computers and the use of binary arithmetic\nAssembly Language: The initial approach to programming using human-readable instructions for machine code\nCalculators: The evolution from Leibniz’s four-species calculating machine to modern electronic computing\nSilicon Microchip Computers: The 1970s revolution with transistors, integrated circuits, and the emergence of Von Neumann architecture\nModern Programming Languages: From low-level assembly languages to high-level languages like Python; distinction between compiled and interpreted languages"
   },
   {
     "objectID": "lectures/lecture-02/02-computational-literacy.html#next-class",
     "href": "lectures/lecture-02/02-computational-literacy.html#next-class",
     "title": "QTM 350 - Data Science Computing",
     "section": "Next class",
-    "text": "Next class\n\n\n\n\n\nWe will learn about the command line and shell scripting in the terminal\nPlease have your WSL or iTerm2 installed, and we will start coding!\nIf you have VS Code, that’s even better! 😉\nPlease check the installation tutorials for more information, and let me know if you have any questions 😃"
+    "text": "Next class\n\n\n\n\n\n\nWe will learn about the command line and shell scripting in the terminal\nPlease have your WSL or iTerm2 installed, and we will start coding!\nIf you have VS Code, that’s even better! 😉\nPlease check the installation tutorials for more information, and let me know if you have any questions 😃"
   }
 ]
