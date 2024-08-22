@@ -910,9 +910,12 @@ _start:
 #| eval: false
 print("Hello, World!")
 ```
+
 :::
 :::
 ::::
+
+# Question: Is Natural Language Programming the Future of High-Level Languages? `r emo::ji('robot')` {background-color="#2d4563"}
 
 # Summary `r emo::ji('light_bulb')` {background-color="#2d4563"}
 
