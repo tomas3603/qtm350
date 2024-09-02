@@ -40,5 +40,3 @@ format:
     css: styles.css
     toc: true
 
-freeze: true
-
