@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: docs
-  execute: 
-    freeze: auto
 
 website:
   title: "QTM 350"
@@ -42,4 +40,5 @@ format:
     css: styles.css
     toc: true
 
+freeze: true
 
