@@ -45,6 +45,7 @@ Suggested references:
 
 - Janssens, J. (2021). [Data science at the command line: Obtain, scrub, explore, and model data with Unix power tools (2nd ed.)](https://jeroenjanssens.com/dsatcl/). O'Reilly Media.
 - Levy, J. (2024). [The art of command line](https://github.com/jlevy/the-art-of-command-line). GitHub.
+- Shotts, W. (2019). [The Linux Command Line: A Complete Introduction](https://linuxcommand.org/tlcl.php). No Starch Press.
 - Healy, K. (2019). [The Plain Person's Guide to Plain Text Social Science](https://plain-text.co/). Chapters 1-5.
 
 #### Wednesday, September 11:
