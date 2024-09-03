@@ -39,7 +39,7 @@ Suggested references:
 
 #### Monday September 09:
 
-- Lecture 03: [The Command Line Interface (CLI), Shell Basics, and File Management.](https://danilofreire.github.io/qtm350/lectures/lecture-03/03-command-line.html)
+- Lecture 03: [The Command Line Interface (CLI), Shell Basics, and File Management.](https://raw.githack.com/danilofreire/qtm350/main/lectures/lecture-03/03-command-line.html)
 
 Suggested references:
 
