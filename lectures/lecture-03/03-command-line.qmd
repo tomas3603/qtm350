@@ -41,7 +41,9 @@ knit_hooks$set(
       )
 })
 
-packages <- c("tidyverse", "emo", "fontawesome")
+options(repos = c(CRAN = "https://cran.rstudio.com/"))
+
+packages <- c("tidyverse", "emo", "fontawesome", "reticulate")
 
 for (package in packages) {
   if (!require(package, character.only = TRUE)) {
@@ -53,969 +55,586 @@ for (package in packages) {
 
 # Recap and lecture overview `r emo::ji('books')`{background-color="#2d4563"}
 
-## Course information
+## Brief recap of last class
+### Early computing and data representation
 
-:::: {.columns}
-::: {.column}
-<img src="figures/profile.jpg" alt="Danilo Freire" width="200" height="200" align="center"/>
+:::{style="margin-top: 30px; font-size: 24px;"}
 
-::: {style="font-size: 26px;"}
-`r fa('envelope')` [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu)
-
-`r fa('globe')` <https://danilofreire.github.io/qtm350>
-
-`r fa('github')` <https://github.com/danilofreire/qtm350>
-:::
-:::
-
-::: {.column}
-- [Instructor]{.alert}: Danilo Freire
-- [Lectures]{.alert}: Mondays and Wednesdays, 2:30-3:45pm
-- [Office hours]{.alert}: At any time, just send me an email in advance
-- Please remember to [check the course repository regularly](https://github.com/danilofreire/qtm350) for updates and announcements `r emo::ji('winking_face')`
-:::
-::::
-
-## Course information
-
-:::{style="margin-top:40px;"}
-:::
-
-:::::{.incremental}
-:::: {.columns}
-::: {.column width="50%"}
-::: {style="font-size: 24px;"}
-- The course focuses on three key areas of data science: [reliability]{.alert}, [reproducibility]{.alert}, and [robustness]{.alert}
-- Main topics: [command line and shell scripting (terminal),]{.fragment .fade-in} [version control (git and GitHub),]{.fragment .fade-in} [reproducible reports (Quarto and Jupyter Notebooks),]{.fragment .fade-in} [data wrangling and storage (Python and SQL),]{.fragment .fade-in} [data visualisation (Python),]{.fragment .fade-in} [AI-paired programming (Copilot),]{.fragment .fade-in} [introduction to containers (Docker),]{.fragment .fade-in} [and parallel computing (Python)]{.fragment .fade-in}
-:::
-:::
-
-::: {.column width="50%"}
-::: {style="font-size: 24px;"}
-- [Grading]{.alert}: 
-  - 50% assignments (10x)
-  - 30% in-class quizzes (5x)
-  - 20% final project
-
-:::{style="margin-top:10px;"}
-:::
-- You can discuss assignments with your classmates, but please [submit your own work]{.alert}
-- [AI is allowed]{.alert} in all assignments and quizzes
-- [Late submissions]{.alert} will be penalised by 10% per day
-- To accommodate any challenges, I will [drop the lowest assignment and quiz grades]{.alert}
-- Additional information will be made available on the [course repository](https://github.com/danilofreire/qtm350)
-:::
-:::
-::::
-:::::
-
-# Questions about the course organisation? {background-color="#2d4563"}
-
-## Software installation
-
-:::{style="margin-top:40px;"}
-:::
-
-:::::{style="font-size: 24px;"}
-:::: {.columns}
-::: {.column}
-- As we discussed in the first lecture, you will need to install the following software:
-
-- A terminal
-  - You can install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) if you are using Windows. Or you can use [VS Code's](https://code.visualstudio.com/) built-in terminal
-  - Mac users already have a terminal. I suggest you install [iTerm2](https://iterm2.com/), [Homebrew](https://brew.sh/) and [Oh My Zsh](https://ohmyz.sh/) for a better experience
-  - Linux users are good to go
-:::
-
-::: {.column}
-- [Git](https://git-scm.com/downloads)
-- [GitHub](https://github.com)
-- [Anaconda](https://www.anaconda.com/products/individual) (or regular Python)
-- [Quarto](https://quarto.org/docs/get-started/index.html)
-- [PostgreSQL](https://www.postgresql.org/download)
-- [Docker](https://docs.docker.com/get-docker)
-- [VS Code](https://code.visualstudio.com/) (optional, but strongly recommended)
-:::
-::::
-
-:::{style="margin-top:40px;"}
-:::
-
-:::{.callout-tip}
-- Please check the [installation tutorials](https://danilofreire.github.io/qtm350/tutorials/tutorials.html) for more information
-- You can also get help from the [Student Tech Support](https://ats.emory.edu/sdl/StudentTechnologySupport/index.html)
-- If you have any questions, please let me know!
-:::
-:::::
-
-## Learning objectives
-### By the end of this lecture, you will be able to:
-
-:::{style="margin-top:40px;"}
-:::
-
-1. Learn how computers work from the ground up, starting with binary code
-2. Get familiar with other key computer encodings like hexadecimal, ASCII, and Unicode
-3. Learn about the pioneers of computing and the development of Assembly language
-4. Understand the difference between low-level and high-level programming languages and when to use each
-
-# Let's get started! `r emo::ji('rocket')` `r emo::ji('computer')` {background-color="#2d4563"}
-
-# Brief history of computing {background-color="#2d4563"}
-
-## The first computers
-
-:::{style="margin-top:40px;"}
-:::
-
-::::: {.columns}
-:::: {.column width="50%"}
-- Historically, [a computer was a person who makes calculations]{.alert}, especially with a calculating machine
-- To do calculations we use numbers. How to represent them?
-  - Fingers 
-  - Pebbles
-  - [Strings (Inca Khipu)](https://www.ecb.torontomu.ca/~elf/abacus/inca-khipu.html)
-  - [Abacus](https://en.wikipedia.org/wiki/Abacus)
-::::
-
-:::: {.column width="50%"}
-:::{style="font-size: 20px;"}
-![](figures/abacus.jpg)
-Video: [How to use an abacus](https://youtu.be/SkUdjlQy3rk&t=176)
-:::
-::::
-:::::
-
-## Four-species mechanical calculators
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/mechanical-calculator.jpg)
-:::
-
-::: {.column width="50%"}
-- The [first mechanical calculator](https://www.arithmeum.uni-bonn.de/en/collection/exhibit-of-the-month/archive/01-the-first-mechanical-calculating-machine-for-all-four-arithmetic-operations-by-gottfried-wilhelm-leibniz.html) capable of performing all four basic arithmetic operations (addition, subtraction, multiplication, and division)
-
-- Invented by [Gottfried Wilhelm Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz) in 1694
-
-- If you took a statistics course before the late 1970s, you likely used this type of [mechanical calculator](https://en.wikipedia.org/wiki/Mechanical_calculator) for your computations
-:::
-::::
-
-## Silicon-based computers
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/transistor.gif)
-:::
-
-::: {.column width="50%"}
-:::{style="font-size: 26px;"}
-The 1970s marked the transition from mechanical to electronic:
-
-:::{.incremental}
-- [Transistors](https://en.wikipedia.org/wiki/Transistor) act as switches for electronic signals
-- [Integrated circuits](https://en.wikipedia.org/wiki/Integrated_circuit) combine multiple transistors on a single chip
-- [Microprocessors](https://en.wikipedia.org/wiki/Microprocessor) are integrated circuits that contain the functions of a computer's central processing unit (CPU)
-- They follow the [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
-:::
-:::
-:::
-::::
-
-## Von Neumann Architecture 
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/neumann.webp)
-:::
-
-::: {.column width="50%"}
-:::{style="font-size: 24px;"}
-- The [Von Neumann Architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture) stores both program instructions and data together in a slow storage medium, such as a [hard disk](https://en.wikipedia.org/wiki/Hard_disk_drive), and transfers them to faster [RAM](https://en.wikipedia.org/wiki/Random-access_memory) for execution by the [CPU](https://en.wikipedia.org/wiki/Central_processing_unit)
-- This is the basis for [almost all modern computers]{.alert}
-- When proposed in 1945, this architecture was revolutionary, as [programs were previously seen as part of the machine](https://en.wikipedia.org/wiki/History_of_computing_hardware), distinct from the data they operated on
-:::
-:::
-::::
-
-## Von Neumann Architecture 
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/von-neumann-architecture.webp)
-:::
-
-::: {.column width="50%"}
-:::{style="font-size: 22px;"}
-- Advantages:
-  - Efficient memory use, with less need for separate areas
-  - Flexibility in data storage and manipulation
-  - Simplicity in design and operation
-
-- Disadvantages:
-  - [Von Neumann bottleneck](https://en.wikipedia.org/wiki/Von_Neumann_architecture#Von_Neumann_bottleneck): Limits computing performance due to sequential processing of instructions and data through a single bus
-  - The CPU often waits for data due to its faster processing speed compared to memory transfer rates
-  - [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture) is an alternative that separates data and instruction memory
-:::
-:::
-::::
-
-# Data representation {background-color="#2d4563"}
-
-## Computers run on 0s and 1s
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-:::{style="font-size: 24px;"}
-- Computers represent everything by using [0s and 1s]{.alert}
-- Transistors act as [switches]{.alert}, with 1 for high voltage level and 0 for low voltage level
-- Computers use binary because transistors are [easy to fabricate]{.alert} in silicon and can be densely packed on a chip
-
-:::{.incremental}
-- _But how does this work?_
-- How can we represent text, images, and videos using only 0s and 1s?
-- This leads us to [abstraction]{.alert}: representing ideas at different
-  levels of detail by identifying what is essential
-- We will use abstraction to translate 0s and 1s to decimal numbers, then
-  translate those numbers to other types
-:::
-:::
-:::
-
-::: {.column width="50%"}
-![](figures/binary-rain.gif)
-:::
-::::
-
-## Converting coins to dollars
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/coins.png)
-:::
-
-::: {.column width="50%"}
-:::{style="font-size: 24px;"}
-- We can convert between number systems by translating a value from one system to the other
-- For example, the coins on the left represent the same value as $0.87
-- Using pictures is clunky. Let's make a new representation system for coins
-:::
-:::
-::::
-
-## Converting coins to dollars
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/coins.png)
-:::
-
-::: {.column width="50%"}
-:::{style="font-size: 24px;"}
-- To represent coins, we will make a number with four digits 
-- The first represents quarters, the second dimes, the third nickels, and the fourth pennies
-  - c3102 =
-  - 3 x $0.25 + 1 x $0.10 + 0 x $0.05 + 2 x $0.01 =
-  - $0.87
-
-![](figures/qdnp.png){width=50%}
-:::
-:::
-::::
-
-## Converting dollars to coins
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/coins.png)
-:::
-
-::: {.column width="50%"}
-:::{.incremental}
-- How do we convert money from dollars to coins? Assume we want to [minimise
-  the number of coins used]{.alert}
-- For example, what is $0.59 in coin representation? Use the same four-digit
-  system: quarters, dimes, nickels, and pennies
-
-- $0.59 = 2 x $0.25 + 0 x $0.10 + 1 x $0.05 + 4 x $0.01 = c2014
-:::
-:::
-::::
-
-## Quick questions!
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-- [Think-Pair-Share]{.alert}: do the following conversions
-
-- What is c1112 in dollars?
-
-- What is $0.61 in coin representation?  
-:::
-
-::: {.column width="50%"}
-::: {.incremental}
-Solutions:
-
-- c1112 = $0.42 = 1 x $0.25 + 1 x $0.10 + 1 x $0.05 + 2 x $0.01
-
-- $0.61 = c2101 = 2 x $0.25 + 1 x $0.10 + 0 x $0.05 + 1 x $0.01
-:::
-:::
-::::
-
-## Number systems – binary
-
-:::{style="margin-top:40px;"}
-:::
-
-:::{.incremental}
-:::{style="font-size: 24px;"}
-- Now let us go back to computers! `r emo::ji('computer')`
-- We can represent numbers using only 0s and 1s with the binary number system
-- Instead of counting the number of 1s, 5s, 10s, and 25s coins you need, count
-  the number of 1s, 2s, 4s, 8s, etc
-- Why these numbers? They are [powers of 2]{.alert}. This is a number in [base
-  2]{.alert}
-
-- A [single binary digit is a bit]{.alert}, e.g., 101 has three bits
-- An [8-bit group is called a byte]{.alert}, e.g., 10101010
-- Binary numbers grow as follows:
-  - 0 represents zero
-  - 1 represents one
-  - 10 represents two
-  - 100 represents four
-  - 1000 represents eight, and so on…
-:::
-:::
-
-## Quick question!
-
-:::{style="margin-top:40px;"}
-:::
-
-- [Think-Pair-Share]{.alert}: what is the binary representation of the decimal
-  number 3?
-
-:::{.fragment .fade-in fragment-index=1}
-A) 101
-:::
-
-:::{.fragment .fade-in fragment-index=2}
-:::{.fragment .highlight-red fragment-index=5}
-B) 11
-:::
-:::
-
-:::{.fragment .fade-in fragment-index=3}
-C) 111
-:::
-
-:::{.fragment .fade-in fragment-index=4}
-D) 010
-:::
-
-## Your turn!
-
-[Practice Exercise 01]{.alert}: 
-
-1. What binary number represents 5?
-
-2. What binary number represents 7?
-
-3. What binary number represents 9?
-
-4. What binary number represents 11?
-
-## Convert binary to decimal
-
-:::{style="margin-top:40px;"}
-:::
-
-To convert a binary number to decimal, just add each power of 2 that is
-represented by a 1.
-
-:::{style="font-size: 26px;"}
-- For example, 00011000 = 16 + 8 = 24
-
-| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-|-----|----|----|----|----|---|---|---|
-|  0  | 0  | 0  | 1  | 1  | 0 | 0 | 0 |
-
-
-<br>
-
-- Another example: 10010001 = 128 + 16 + 1 = 145
-
-| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-|-----|----|----|----|----|---|---|---|
-|  1  | 0  | 0  | 1  | 0  | 0 | 0 | 1 |
-
-:::
-
-# So far, so good? `r emo::ji('smiley')` {background-color="#2d4563"}
-
-# Binary and abstraction {background-color="#2d4563"}
-
-## Binary and abstraction
-
-<br>
-
-- Now that we can represent numbers using binary, [we can represent everything
-  computers store using binary]{.alert}
-- We just need to use [abstraction]{.alert} to interpret bits or numbers in particular ways
-- Let us consider colours, images, and text
-
-## Images as collections of colours
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="60%"}
-![](figures/mona-lisa.png)
-:::
-
-::: {.column width="40%"}
-:::{style="font-size: 28px; margin-top: 40px;"}
-:::{.incremental}
-- What if we want to represent an image? How can we convert that to numbers?
-- First, break the image down into a grid of colours, where each dot of color has a distinct hue 
-- A dot of color in this context is called a [pixel](https://en.wikipedia.org/wiki/Pixel)
-- Now we just need to represent a single color (a pixel) as a number!
-:::
-:::
-:::
-::::
-
-## Images as collections of colours
-### RGB colour model
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="60%"}
-![](figures/rgb.png)
-:::
-
-::: {.column width="40%"}
-:::{style="font-size: 24px; margin-top: 40px;"}
-:::{.incremental}
-- The [RGB colour model](https://en.wikipedia.org/wiki/RGB_color_model) is
-  widely used in digital displays
-- Each pixel is represented by three numbers, each ranging from 0 to 255
-- The first number represents the amount of red, the second the amount of
-  green, and the third the amount of blue
-- 00000000 is no r/g/b and 11111111 is very r/g/b! 
-- You can try different colours [here](https://www.w3schools.com/colors/colors_rgb.asp)
-:::
-:::
-:::
-::::
-
-## Number systems – Hexadecimal
-### What is hexadecimal?
-
-:::{style="margin-top:20px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Computers evolved from [people to mechanical calculators to silicon-based machines]{.alert}
+- Modern computers use the [Von Neumann architecture]{.alert}, storing both instructions and data in memory
+- Computers represent data using [binary (base 2) numbers]{.alert} made up of 0s and 1s
+- A [bit]{.alert} is a single binary digit; [8 bits make a byte]{.alert}
+- [Hexadecimal (base 16)]{.alert} is a compact way to represent binary, with each hex digit corresponding to 4 bits
+- [Abstraction]{.alert} allows representing complex data like images and text using numbers
 :::
 
-:::: {.columns}
-::: {.column width="50%"}
+:::{.column width="50%"}
 ![](figures/hexadecimal.png)
 :::
+:::
+:::
+
+## Brief recap of last class
+### Representing images, colours and text
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+
+:::{.columns}
+:::{.column width="50%"}
+- Images can be broken down into a [grid of coloured pixels]{.alert}
+- Colours are represented using the [RGB model]{.alert}, with each colour channel (red, green, blue) ranging from 0-255
+- 8-bit color uses 256 levels per channel, allowing for over [16 million possible colors]{.alert}
+- Text is broken into [individual characters]{.alert}, with each character mapped to a number using an encoding like [ASCII]{.alert}
+- [ASCII is a simple lookup table]{.alert} mapping the numbers 0-255 to characters
+- [Unicode]{.alert} extends ASCII to support accented characters and symbols from all languages
+:::
+
+:::{.column width="50%"}
+![](figures/rgb.png)
+:::
+:::
+:::
+
+## Brief recap of last class
+### Programming languages
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+
+:::{.columns}
+:::{.column width="50%"}
+- [Konrad Zuse]{.alert} created the first programmable computers and high-level programming language in the 1940s
+- [Assembly]{.alert} allows writing human-readable instructions that map closely to machine code
+- [High-level languages like Python]{.alert} abstract away hardware details and are more portable across systems
+- [Low-level languages]{.alert} are harder to read and write but very fast and efficient
+- [Compiled languages]{.alert} are converted to machine code before execution; [interpreted languages]{.alert} are executed on the fly
+:::
+
+:::{.column width="50%"}
+![](figures/high-low-languages.png)
+:::
+:::
+:::
+
+## Today's lecture
+### Command line: the old school way of interacting with computers
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+
+:::{.columns}
+:::{.column width="50%"}
+- Today, we will learn about the [command line]{.alert}, a text-based interface to interact with computers
+- We will learn about [basic commands]{.alert} to navigate the file system, create and delete files, and run programs
+- We will also learn about [shell scripting]{.alert}, a way to automate tasks using the command line
+- The command line is still widely used in data science and programming, especially for [remote servers]{.alert}, [cloud computing]{.alert}, and [automation]{.alert}
+:::
+
+:::{.column width="50%"}
+![](figures/cli.png)
+:::
+:::
+:::
+
+# Questions? `r emo::ji('nerd')`{background-color="#2d4563"}
+
+# What is the command line? `r emo::ji('computer')`{background-color="#2d4563"}
+
+## A computer in a nutshell
+### Operating system
+
+:::{style="font-size: 22px;"}
+:::{.columns}
 
 ::: {.column width="50%"}
-:::{style="font-size: 22px; margin-top: 20px;"}
+![](figures/kernel-and-user-space.png)
+Credit [Dave Kerr](https://effective-shell.com/part-2-core-skills/what-is-a-shell/)
+:::
+
+::: {.column width="50%"}
+- The [operating system (OS)]{.alert} is system software that interfaces with (and manages access to) a computer's hardware. It also provides software resources
+- The OS is divided into the [kernel and user space]{.alert}
+- The [kernel]{.alert} is the core of the OS. It's responsible for interfacing with hardware (drivers), managing resources etc. Running software in the kernel is *extremely* sensitive! That's why users are kept away from it!
+- The [user space]{.alert} provides an interface for users, who can run
+  programs/applications on the machine. Hardware access of programmes (e.g., memory usage) is managed by the kernel. Programmes in user space are essentially in sandboxes, which sets a limit to how much damage they can do.
+:::
+:::
+:::
+
+## A computer in a nutshell
+### Kernels and shells
+
+:::{style="font-size: 23px;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/kernel-and-user-space.png)
+![](figures/walnut.jpeg){width=25%}
+Credit [Dave Kerr](https://effective-shell.com/part-2-core-skills/what-is-a-shell/)/[Kkchaudhary11](https://commons.wikimedia.org/w/index.php?curid=49069244)
+:::
+
+::: {.column width="50%"}
+- The [shell]{.alert} is just a general name for any user space program that allows access to resources in the system, via some kind of interface
+- Shells come in many different flavours but are generally provided to aid a human operator in accessing the system. This could be interactively, by **typing at a terminal**, or via **scripts**, which are files that contain a sequence of commands
+- Modern computers use [graphical user interfaces (GUIs)]{.alert} as the standard tool for human-computer interaction
+- [Why "kernel" and "shell"?]{.alert} The kernel is the soft, edible part of a nut or seed, which is surrounded by a shell to protect it. Useful metaphor, _innit_?
+:::
+:::
+:::
+
+## Interacting with the shell
+### Terminals
+
+:::{style="font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/diagram3-terminal-and-shell.png)
+Credit [Dave Kerr](https://effective-shell.com/part-2-core-skills/what-is-a-shell/)
+:::
+
+:::{.column width="50%"}
+- Things are still a bit more complicated
+- We're not directly interacting with the "shell" but using a [terminal]{.alert}
+- A terminal is just a program that [reads input]{.alert} from the keyboard, [passes that input]{.alert} to another programme, and [displays the results]{.alert} on the screen
+- A shell program on its own does not do this - it requires a terminal as an interface
+- [Why "terminal"?]{.alert} Back in the old days (before computer screen existed), terminal machines (hardware!) were used to let humans interface with large machines ("mainframes"). Often many terminals were connected to a single machine
+- When you want to work with a computer in a data center (or remotely in cloud computing), you'll still do pretty much the same
+:::
+:::
+:::
+
+## Interacting with the shell
+### Command line
+
+:::{style="font-size: 21px;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/diagram3-terminal-and-shell.png)
+Credit [Dave Kerr](https://effective-shell.com/part-2-core-skills/what-is-a-shell/)
+:::
+
+:::{.column width="50%"}
+- Terminals are really quite simple - they're just interfaces.
+- The first thing that a terminal program will do is run a shell program - a program that we can use to operate the computer.
+- [Back to the shell:]{.alert} the shell usually takes input
+
+  - Interactively from the user via the terminal's **command line**.
+  - Executes scripts (without command line).
+- In interactive mode the shell then returns output
+
+  - To the terminal where it is printed/shown.
+  - To files or other locations.
+
+- The command line (or command prompt) represents what is shown and entered in the terminal. They can be [customised](https://ohmyz.sh/) (e.g., with color highlighting) to make interaction more convenient.
+:::
+:::
+:::
+
+## Shell variants
+### Bash, Zsh, and others
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/runningbashscript.png)
+:::
+
+:::{.column width="50%"}
+-   It is important to note that there are [many different shell programmes]{.alert}, and they [differ in terms of functionality](https://en.wikipedia.org/wiki/Comparison_of_command_shells)
+-   On most Unix-like systems, the default shell is a program called [**bash**](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), which stands for "Bourne Again Shell"
+-   Other examples are the [Z Shell](https://en.wikipedia.org/wiki/Z_shell) (or zsh; default on MacOS), [Windows Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe) (cmd.exe, the default CLI on MS Windows), [Windows PowerShell](https://en.wikipedia.org/wiki/PowerShell), [C Shell](https://en.wikipedia.org/wiki/C_shell), and many more
+-   When a terminal opens, it will immediately start the user's preferred shell programme. (This can be [changed](https://effective-shell.com/part-1-transitioning-to-the-shell/getting-started/).)
+:::
+:::
+:::
+
+# Why bother with the shell? `r emo::ji('man_shrugging')` {background-color="#2d4563"}
+
+## Why bother with the shell?
+
+:::{style="margin-top: 30px;"}
+
+:::{.columns}
+:::{.column width="50%"}
+:::{.fragment .fade-in}
+**Why should you use this...**
+
+![](figures/zsh-screenshot.png)
+:::
+:::
+
+::: {.column width="50%"}
+:::{.fragment .fade-in}
+**... instead of this?**
+
+![](figures/macos-finder-screenshot.jpeg)
+:::
+:::
+:::
+:::
+
+## Why bother with the shell?
+### The programmer's best friend
+
+:::{style="margin-top: 30px; font-size: 23px;"}
 :::{.incremental}
-- When we represent values with multiple bytes, it can be hard to distinguish where numbers begin and end
-- [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) is a number system with 16 digits: 0123456789**ABCDEF**
-- It is used to represent binary numbers in a more compact way
-- Each hex digit corresponds to 4 binary bits, making it a shorthand for binary:
-  - 0000 = 0
-  - 0001 = 1
-  - 0010 = 2
-  - ...
-  - 1110 = E
-  - 1111 = F
-:::
-:::
-:::
-::::
+1.  [Speed.]{.alert} Typing is fast: A skilled shell user can manipulate a system at dazzling speeds just using a keyboard. Typing commands is generally much faster than exploring through user interfaces with a mouse.
 
-## Binary to hex conversion
+2.  [Power.]{.alert} Both for executing commands and for fixing problems. There are some things you just can't do in an IDE or GUI. It also avoids memory complications associated with certain applications and/or IDEs.
 
-:::{style="margin-top:40px;"}
+3.  [Reproducibility.]{.alert} Scripting is reproducible, while clicking is not.
+
+4.  [Portability.]{.alert} A shell can be used to interface to almost any type of computer, from a mainframe to a Raspberry Pi, in a very similar way. The shell is often the only game in town for high performance computing (interacting with servers and super computers).
+
+5.  [Automation.]{.alert} Shells are programmable: Working in the shell allows you to program workflows, that is create scripts to automate time-consuming or repetitive processes.
+
+6.  [Become a marketable data scientist.]{.alert} Modern programming is often polyglot. The shell provides a common interface for tooling. Modern solutions are often built to run in containers on Linux. In this environment shell knowledge has become very valuable. In short, [the shell is having a renaissance](https://effective-shell.com/part-1-transitioning-to-the-shell/the-renaissance-of-the-shell/) in the age of data science.
+:::
 :::
 
-- Convert binary to hex by grouping into blocks of four bits.
-- Example: Binary `1001 1110 0000 1010` converts to Hex `9E0A`.
+# The Unix philosophy {background-color="#2d4563"}
+
+## The Unix philosophy
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+:::{.incremental}
+The shell tools that we're going to be using have their roots in the [Unix](https://en.wikipedia.org/wiki/Unix) family of operating systems originally developed at Bells Labs in the 1970s.
+
+Besides paying homage, acknowledging the Unix lineage is important because these tools still embody the "[Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)":
+
+> **Do One Thing And Do It Well**
+
+By pairing and chaining well-designed individual components, we can build powerful and much more complex larger systems.
+
+You can see why the Unix philosophy is also referred to as "minimalist and modular".
+
+Again, this philosophy is very clearly expressed in the design and functionality of the Unix shell.
+:::
+:::
+
+## Things to use the shell for
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.incremental}
+- Navigating the file system
+- Version control with Git
+- Renaming and moving files
+- Finding things on your computer
+- Writing and running code
+- Installing and updating software
+- Monitoring system resources
+- Connecting to cloud environments
+- Running analyses ("jobs") on super computers
+- ... and much more!
+:::
+:::
+
+# Shell basics `r emo::ji('spiral_shell')` `r emo::ji('nerd')` {background-color="#2d4563"}
+
+## Shell: First look
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+
+Let's open up our shell!
+
+A convenient way to do this is through [VSCode's built-in Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
+
+Click on the **View** menu, then **Terminal**. You can also use the shortcut `Ctrl`+` ` (backtick).
+
+Your system default shell is loaded. To find out what that is, type `echo $SHELL` in the terminal.
+
+```{bash, echo=TRUE}
+echo $SHELL
+```
+
+It's [Z shell](https://ohmyz.sh/) in my case.
+
+Of course, it's always possible to open up the Shell directly if you prefer. It's your turn!
+
+- [Linux](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
+
+- [Mac](https://www.techwalla.com/articles/how-to-open-terminal-on-a-macbook)
+
+- [Windows](https://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/)
+:::
+
+## Shell: First look
+
+:::{style="margin-top: 30px; font-size: 27px;"}
+You should see something like:
+
+```{bash, eval=FALSE, echo=TRUE}
+ username@hostname:~$
+```
+
+This is shell-speak for: "Who am I and where am I?" (Type in `$ whoami` without the leading dollar sign to confirm)
+
+- `username` denotes a specific user (one of potentially many on this computer).
+
+- `@hostname` denotes the name of the computer or server.
+
+- `:~` denotes the directory path (where `~` signifies the user's home directory).
+
+- `$` (or maybe `%`) denotes the start of the command prompt.
+
+    - (For a special "superuser" called root, the dollar sign will change to a `#`).
+
+```{bash, echo=TRUE}
+whoami
+pwd
+```
+
+
+:::
+
+## Useful keyboard shortcuts
+
+-   `Tab` completion.
+
+-   Use the `↑` (and `↓`) keys to scroll through previous commands.
+
+-   `Ctrl`+`→` (and `Ctrl`+`←`) to skip whole words at a time.
+
+-   `Ctrl`+`a` moves the cursor to the beginning of the line.
+
+-   `Ctrl`+`e` moves the cursor to the end of the line.
+
+-   `Ctrl`+`k` deletes everything to the right of the cursor.
+
+-   `Ctrl`+`u` deletes everything to the left of the cursor.
+
+-   `Ctrl`+`Shift`+`c` to copy and `Ctrl`+`Shift`+`v` to paste (or just `⌘`+ `c/v` on a Mac).
+
+-   `Ctrl`+`l` clears your terminal.
+
+# Syntax {background-color="#2d4563"}
+
+## Syntax
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+All Bash commands have the same basic syntax:
+
+[**command option(s) argument(s)**]{.alert}
+
+**Examples:**
+
+```{bash, eval=FALSE, echo=TRUE}
+# list files in the Documents directory 
+# with human-readable sizes
+
+ls -lh ~/Documents 
+```
 
 <br>
 
-:::{.fragment .fade-in}
-[Practice Exercise 02]{.alert}:
+```{bash, eval=FALSE, echo=TRUE}
+# sort the file and remove duplicates
 
-1. Convert the decimal number 13 to binary.
-
-2. Convert the decimal number 13 to hexadecimal. 
+sort -u file.txt 
+```
 :::
 
-## Hexadecimal and HTML
-### Hex and RGB
+:::{.column width="50%"}
+**Commands**
 
-:::{style="margin-top:40px;" .incremental}
-- HTML uses hexadecimal to represent colours
-- Six-digit hex numbers specify colours:
-  - FFFFFF = White
-  - 000000 = Black
+- You don't always need options or arguments.
 
-- Each pair of digits represents a colour component (RGB).
+- For example:
+    - `$ ls ~/Documents/` and `$ ls -lh` are both valid commands that will yield output.
 
-- Each color channel typically has a range from 0 to 255 (in 8-bit systems), which gives a total of 256 intensity levels for each primary color.
-
-- When you combine the three channels, you get a possible color palette of $256^3$ or about 16.7 million colours
-:::
-
-## Represent text as individual characters
-### Characters and glyphs
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="60%"}
-![](figures/glyph.png)
-:::
-
-::: {.column width="40%"}
-:::{style="font-size: 24px; margin-top: 40px;"}
-:::{.incremental}
-- Next, how do we represent text?
-- First, we break it down into smaller parts, like with images. In this case,
-  we can break text down into [individual characters]{.alert}
-- A **character** is the smallest component of text, like A, B, or /.
-- A [**glyph**](https://en.wikipedia.org/wiki/Glyph) is the graphical representation of a character.
-- In programming, the display of glyphs is typically handled by GUI (Graphical
-  User Interface) toolkits or font renderers
+- However, you always need a command.
 :::
 :::
 :::
-::::
 
-## Represent text as individual characters
-### Lookup tables
+## Syntax
 
-:::{style="margin-top:40px;"}
-:::
+:::{style="margin-top: 30px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+All Bash commands have the same basic syntax:
 
-:::: {.columns}
-::: {.column width="60%"}
-![](figures/ascii-art-homer.jpg){width="70%"}
-:::
+command [option(s)]{.alert} argument(s)
 
-::: {.column width="40%"}
-:::{style="font-size: 22px; margin-top: 40px;"}
-:::{.incremental}
-- For example, the text "Hello World" becomes `H, e, l, l, o, space, W, o, r, l, d` 
-- Unlike colours, characters do not have a logical connection to numbers
-- To represent characters as numbers, we use a [lookup table]{.alert} called
-  [ASCII](https://en.wikipedia.org/wiki/ASCII)
-- ASCII stands for American Standard Code for Information Interchange
-- As long as every computer uses the same lookup table, computers can always translate a set of numbers into the same set of characters
-:::
-:::
-:::
-::::
+**Examples:**
 
-## ASCII is nothing but a simple lookup table
-### Yes, really!
+```{bash, eval=FALSE, echo=TRUE}
+# list files in the Documents directory 
+# with human-readable sizes
 
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="40%"}
-For basic characters, we can use the encoding system called ASCII. This maps
-the numbers 0 to 255 to characters. Therefore, one character is represented by
-one byte
-
-Check it out here: [ASCII Table](https://www.asciitable.com/)
-:::
-
-::: {.column width="60%"}
-![](figures/ascii-table.png)
-:::
-::::
-
-## ASCII is nothing but a simple lookup table
-### Translation
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="40%"}
-:::{style="font-size: 38px;"}
-"Hello World" =
-
-`01001000
-01100101
-01101100
-01101100
-01101111
-00100000
-01010111
-01101111
-01110010
-01101100
-01100100`
-:::
-:::
-
-::: {.column width="60%"}
-![](figures/ascii-table.png)
-:::
-::::
-
-
-## Your turn!
-### Practice Exercise 03
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="40%"}
-:::{style="font-size: 38px;"}
-- Translate the following binary into ASCII text:
-
-`01011001
-01100001
-01111001`
-:::
-:::
-
-::: {.column width="60%"}
-![](figures/ascii-table.png)
-:::
-::::
-
-
-## ASCII Limitations
-
-:::{style="margin-top:40px; font-size: 24px;"}
-
-- ASCII only includes unaccented characters.
-- Languages requiring accented characters cannot be represented.
-- Even English needs characters like ‘é’ for words such as ‘café’.
-
-:::{style="margin-top:20px;"}
-- To address this, [Unicode](https://en.wikipedia.org/wiki/Unicode) was developed
-- Unicode is a superset of ASCII that includes characters from all languages, as well as symbols and emojis
-- The Unicode system represents every character that can be typed into a
-  computer. It uses up to 5 bytes, which can represent up to 1 trillion
-  characters! 
-- UTF-8 stands for Transformation Format 8-bit
-
-- Find all the Unicode characters here: <https://symbl.cc/en/unicode-table/>
-  - "Danilo" in Unicode: `\u0044\u0061\u006e\u0069\u006c\u006f`
-  - "QTM 350" in Unicode: `\u0051\u0054\u004d\u0020\u0033\u0035\u0030`
-    
-- Decoder: <https://symbl.cc/en/tools/decoder/>
-:::
-:::
-
-# Questions? `r emo::ji('thinking_face')` {background-color="#2d4563"}
-
-# Programming languages and the genesis of programming `r emo::ji('glowing_star')` `r emo::ji('input_latin_lowercase')` `r emo::ji('snake')` {background-color="#2d4563"}
-
-## The genesis of programming
-### Zuse's computers
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-![](figures/z3.JPG)
-:::
-
-::: {.column width="50%"}
-:::{style="font-size: 24px; margin-top: 40px;"}
-- [Konrad Zuse](https://en.wikipedia.org/wiki/Konrad_Zuse) was a German
-  engineer and computer pioneer
-- He created the first programmable computer, the
-  [Z3](https://en.wikipedia.org/wiki/Z3_(computer)), in 1941
-- The Z3 was the first computer to use [binary arithmetic]{.alert} and read binary instructions from punch tape
-- Example: Z4 had 512 bytes of memory
-- Zuse also created the first high-level programming language,
-  [Plankalkül](https://en.wikipedia.org/wiki/Plankalk%C3%BCl)
-:::
-:::
-::::
-
-## What is Assembly language?
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="60%"}
-![](figures/assembly.png)
-:::
-
-::: {.column width="40%"}
-:::{style="font-size: 24px; margin-top: 40px;"}
-- [Assembly language](https://en.wikipedia.org/wiki/Assembly_language) is a
-  low-level programming language that allows writing machine code in human-readable text
-- Each instruction corresponds to a single machine code instruction
-- The first assemblers were human!
-- Programmers wrote assembly code, which secretaries transcribed to binary for machine processing
-:::
-:::
-::::
-
-## Some curious facts about Assembly!
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="60%"}
-![Margaret Hamilton and the Apollo 11 code](figures/apollo11a.jpg)
-:::
-
-::: {.column width="40%"}
-:::{style="font-size: 22px; margin-top: 40px;"}
-- The [Apollo 11](https://en.wikipedia.org/wiki/Apollo_11) mission to the moon
-  was programmed in assembly language
-- The code is available here: <https://github.com/chrislgarry/Apollo-11> (good
-  luck reading it! `r emo::ji('grinning_face_with_sweat')`)
-
-- One of the files is the `BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc` `r emo::ji('fire')` `r emo::ji('rocket')`
-
-- But if Assembly is so fast and efficient, why don't we use it all the time?
-:::
-:::
-::::
-
-## Low-level vs high-level languages
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-:::{style="font-size: 24px;"}
-- [Low-level
-  languages](https://en.wikipedia.org/wiki/Low-level_programming_language) are
-  closer to machine code and are harder to read and write
-- [High-level languages](https://en.wikipedia.org/wiki/High-level_programming_language)
-  abstract from hardware details and are portable across different systems
-
-:::{style="margin-top:10px;"}
-:::
-
-- **Compiled Languages:** Convert code to binary instructions before execution (e.g., `C++`, `Fortran`, `Go`).
-- **Interpreted Languages:** Run inside a program that interprets and executes commands immediately (e.g., `R`, `Python`).
-:::
-:::
-
-::: {.column width="50%"}
-![](figures/high-low-languages.png)
-:::
-::::
-
-## Low-level vs high-level languages
-### Code that is worth a thousand words
-
-:::{style="margin-top:40px;"}
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-:::{style="font-size: 24px;"}
-- "Hello, World!" in machine code:
-
-```{assembly}
-#| echo: TRUE
-#| eval: FALSE
-
-48 65 6C 6C 6F 2C 20 57 6F 72 6C 64 21 
+ls -lh ~/Documents 
 ```
 
-- "Hello, World!" in
-  [Assembly](https://en.wikipedia.org/wiki/Assembly_language) (x86 Assembly for Linux)
+<br>
 
-```{assembly}
-#| echo: true
-#| eval: false
+```{bash, eval=FALSE, echo=TRUE}
+# sort the file and remove duplicates
 
-section .data
-    message db 'Hello, World!', 10    ; 10 is the ASCII code for newline
+sort -u file.txt 
+```
+:::
 
-section .text
-    global _start
+:::{.column style="width: 40%; font-size: 20px;"}
+**Options** (also called **Flags**)
 
-_start:
-    mov eax, 4          ; system call number for write
-    mov ebx, 1          ; file descriptor 1 is stdout
-    mov ecx, message    ; address of string to output
-    mov edx, 14         ; number of bytes
-    int 0x80            ; call kernel
+-   Start with a dash. Usually one letter.
 
-    mov eax, 1          ; system call number for exit
-    xor ebx, ebx        ; exit status 0
-    int 0x80            ; call kernel
+-   Multiple options can be chained under a single dash.
+
+    ```{bash, eval=FALSE, echo=TRUE}
+    ls -l -a -h /var/log ## This works
+    ls -lah /var/log ## So does this
+    ```
+
+-   An exception is with (rarer) options requiring two dashes.
+
+    ```{bash, eval=FALSE, echo=TRUE}
+    ls --group-directories-first --human-readable /var/log
+    ```
+
+-   `l`: Use a long listing format. This option shows detailed information about the files and directories
+
+-   `h`: With `-l`, print sizes in human-readable format (e.g., KB, MB)
+
+-   `u`: Unique, it filters out the duplicate entries in the output
+
+-   Think it's difficult to memorize what the individual letters stand for? [You're totally right!]{.alert}
+:::
+:::
+:::
+
+## Syntax
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+All Bash commands have the same basic syntax:
+
+command option(s) [argument(s)]{.alert}
+
+**Examples:** 
+
+```{bash, eval=FALSE, echo=TRUE}
+$ ls -lh ~/Documents/
 ```
 
-:::
+<br>
+
+```{bash, eval=FALSE, echo=TRUE}
+$ sort -u file.txt
+```
 :::
 
 ::: {.column width="50%"}
-:::{style="font-size: 24px;"}
-- "Hello, World!" in
-  [Python](https://en.wikipedia.org/wiki/Python_(programming_language)):
+**Arguments**
 
-```{R}
-#| echo: true
-#| eval: false
-print("Hello, World!")
+-   Tell the command *what* to operate on.
+
+-   Totally depends on the command what legit inputs are.
+
+-   Can be a file, path, a set of files and folders, a string, and more
+
+-   Sometimes more than just one argument is needed:
+
+    ```{bash, eval=FALSE, echo=TRUE}
+    mv figs/cat.png best-figs/cat02.png
+    ```
+:::
+:::
+:::
+
+# Help! `r emo::ji('help')` `r emo::ji('anguished_face')` {background-color="#2d4563"}
+
+## Multiple ways to get help
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+-   The `man` tool can be used to look at the manual page for a topic.
+
+-   The `man` pages are grouped into sections, we can see them with `man man`.
+
+-   The [`cht.sh`](https://cht.sh/) website can be used directly from the shell to get help on tools. Run it like this: `curl cht.sh/command`
+![](figures/chtsh.png)
+:::
+
+::: {.column width="50%"}
+![](figures/beatles-help.jpeg)
+:::
+:::
+:::
+
+## Multiple ways to get help
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.columns}
+:::{.column width="50%"}
+- You can also install the [`tldr` tool](https://github.com/tldr-pages/tldr) which provides simplified help pages for common commands. Run it like this: `tldr command`
+
+```{bash, echo=TRUE}
+tldr ls
 ```
-
-:::
-:::
-::::
-
-# Question: Is Natural Language Programming the Future of High-Level Languages? `r emo::ji('robot')` {background-color="#2d4563"}
-
-# Summary `r emo::ji('light_bulb')` {background-color="#2d4563"}
-
-## Summary
-
-:::{style="margin-top:40px;"}
 :::
 
-:::{style="font-size: 24px;"}
-- **Computational Literacy**: Binary and hexadecimal numbers, characters (ASCII, Unicode), and distinction between high vs low-level programming languages
-- **Early Computing**: Konrad Zuse's pioneering work with programmable digital computers and the use of binary arithmetic
-- **Assembly Language**: The initial approach to programming using human-readable instructions for machine code
-- **Calculators**: The evolution from Leibniz’s four-species calculating machine to modern electronic computing
-- **Silicon Microchip Computers**: The 1970s revolution with transistors, integrated circuits, and the emergence of Von Neumann architecture
-- **Modern Programming Languages**: From low-level assembly languages to high-level languages like `Python`; distinction between compiled and interpreted languages
+::: {.column width="50%"}
+![](figures/beatles-help.jpeg)
+
+- For more info on how to get help, see [here](https://effective-shell.com/part-1-transitioning-to-the-shell/getting-help/).
+:::
+:::
 :::
 
-## Next class
+## Getting help with man
 
-:::{style="margin-top:40px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
+
+The `man` command ("manual pages") is your friend if you need help.
+
+```{bash, echo=TRUE}
+man ls
+```
 :::
 
-::::{.incremental}
-:::{style="font-size: 28px;"}
-- We will learn about the [command
-  line](https://en.wikipedia.org/wiki/Command-line_interface) and [shell
-  scripting](https://en.wikipedia.org/wiki/Shell_script) in the terminal
-- Please have your [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-  or [iTerm2](https://iterm2.com/) installed, and we will start coding!
-- If you have VS Code, that's even better! `r emo::ji('winking_face')`
-- Please check the [installation
-  tutorials](https://danilofreire.github.io/qtm350/tutorials/tutorials.html)
-  for more information, and let me know if you have any questions `r emo::ji('smiley')`
+## Getting help with man
 
-:::{style="margin-top:30px;"}
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+Manual pages are shown in the shell *pager*. Here are the essentials to navigate through contents presented in the pager:
+
+-   `d` - Scroll down half a page
+
+-   `u` - Scroll up half a page
+
+-   `j` / `k` - Scroll down or up a line. You can also use the arrow keys for this
+
+-   `q` - Quit
+
+-   `/pattern` - Search for text provided as "pattern"
+
+-   `n` - When searching, find the next occurrence
+
+-   `N` - When searching, find the previous occurrence
+
+-   These and other `man` tricks are detailed in the help pages (hit "h" when you're in the pager for an overview).
 :::
 
-- [Assignment 01](https://github.com/danilofreire/qtm350/blob/main/assignments/01-assignment.ipynb) is already online. Please check it out! Due date: 11 September 2024.
-:::  
-::::
+:::{.column width="50%"}
+![](figures/rtfm-bayeux.png)
+RTFM
 
-# Thank you very much and see you next class! `r emo::ji('smiling_face_with_smiling_eyes')` `r emo::ji('folded_hands')` {background-color="#2d4563"}
-
-## Solution - Practice Exercise 01 {#sec-solution01}
-
-:::{style="font-size: 24px; margin-top: 40px;"}
-
-1. What binary number represents 5?
-  - In binary, the number 5 is represented as 101, which equates to $(1 \times 2^2) + (0 \times 2^1) + (1 \times 2^0)$.
-
-2. What binary number represents 7?
-  -  In binary, the number 7 is represented as 111, which equates to $(1 \times 2^2) + (1 \times 2^1) + (1 \times 2^0)$.
-
-3. What binary number represents 9?
-  - In binary, the number 9 is represented as 1001, which equates to $(1 \times 2^3) + (0 \times 2^2) + (0 \times 2^1) + (1 \times 2^0)$.
-
-4. What binary number represents 11?
-  - In binary, the number 11 is represented as 1011, which equates to $(1 \times 2^3) + (0 \times 2^2) + (1 \times 2^1) + (1 \times 2^0)$.
+**Always check the documentation!**
+:::
+:::
 :::
 
-## Solution - Practice Exercise 02 {#sec-solution02}
+## Help practice!
 
-:::{style="font-size: 22px; margin-top: 40px;"}
+:::{style="margin-top: 30px;"}
 
-1. Decimal 13 is `1101` in binary.
-  - Break it down: $13 = (1 \times 2^3) + (1 \times 2^2) + (0 \times 2^1) + (1 \times 2^0)$.
+- In your Terminal, access the `man` and explore the document. I want you to share with a colleague your first impression and five commands you found interesting.
 
-2. Binary 1101 is `D` in hexadecimal.
-  - Group the binary into blocks of four: `1101`.
-  - Convert each block to hex: `1101` (binary) = `D` (hex).
-  - Let's take a closer look at how to convert the binary number `1101` to hexadecimal:
-  - Start with the binary number: `1101`
-  - Convert it to decimal by summing the powers of 2:
-    - $1 \times 2^3$ = 8
-    - $1 \times 2^2$ = 4
-    - $0 \times 2^1$ = 0
-    - $1 \times 2^0$ = 1
-    
-- Add the decimal values: $8 + 4 + 0 + 1 = 13$
-- The decimal number `13` corresponds to the hexadecimal number `D`.
-- Therefore, binary `1101` is `D` in hexadecimal.
-:::
-
-## Solution - Practice Exercise 03 {#sec-solution03}
-
-:::{style="font-size: 24px; margin-top: 40px;"}
-- Step 1: Identify the binary strings: `01011001 01100001 01111001`
-
-- Step 2: Convert each binary string to its decimal equivalent
-  - 01011001 = 89
-  - 01100001 = 97
-  - 01111001 = 121
-
-- Step 3: Map each decimal value to its corresponding ASCII character
-  - 89 = Y
-  - 97 = a
-  - 121 = y
-
-- Step 4: Combine the ASCII characters to form the final text
-  - Result: Yay
+- Please present your own (first impression + five commands) and colleague (first impression and five commands) views in the lecture quiz!
 :::
 
