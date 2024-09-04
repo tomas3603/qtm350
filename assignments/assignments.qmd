@@ -20,7 +20,7 @@ When submitting, please name your files as follows: `assignment-01-your-name.ipy
 
 ## In-Class Quizzes
 
-In-class quizzes will be held on Wednesdays. They will be based on the material covered in the previous weeks. The quizzes will be open-book and open-notes, but you will not be allowed communicate with others during the quiz. They will be available in the `quizzes` folder on [the course repository](https://github.com/danilofreire/qtm350/tree/main/quizzes).
+In-class quizzes will be held on Wednesdays. They will be based on the material covered in the previous weeks. The quizzes will be open-book and open-notes, but you will not be allowed communicate with others during the quiz. They will also be available in the `assignment` folder on GitHub and on the course website.
 
 ## Final Project
 
