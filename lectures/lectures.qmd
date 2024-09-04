@@ -50,7 +50,7 @@ Suggested references:
 
 #### Wednesday, September 11:
 
-- Lecture 04: Command line tools, text files, scripting, and basics of Vim.
+- Lecture 04: [Command Line Tools, Text Files, Scripting, and Basics of Vim](https://danilofreire.github.io/qtm350/main/lectures/lecture-04/04-more-command-line.html).
 - **Assignment 01 due (5%).**
 - **Assignment 02:** Problem Set 02.
 
@@ -59,6 +59,8 @@ Suggested references:
 - Kerr, D. (2024). [Effective Shell](https://effective-shell.com/).
 - Irianto, I. (2021). [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim).
 - Neil, D. (2015). [Practical Vim: Edit Text at the Speed of Thought](https://pragprog.com/titles/dnvim2/practical-vim-second-edition/). Pragmatic Bookshelf.
+- Dennis, J. [Your problem with Vim is that you don't grok vi.](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) (Stack Overflow).
+- [Vim Adventures](https://vim-adventures.com/). (Instructor's note: this is a fun, albeit cringy, way to learn Vim).
 - Videos: [freeCodeCamp - Command line crash course](https://www.youtube.com/watch?v=yz7nYlnXLfE&pp=ygUXaG93IHRvIHVzZSBjb21tYW5kIGxpbmU%3D), [Percy Grunwald - Absolute beginner guide to the macOS terminal](https://www.youtube.com/watch?v=aKRYQsKR46I&pp=ygUcdGVybWluYWwgZm9yIGJlZ2lubmVycyBtYWNvcw%3D%3D), [NetworkChuck - 50 macOS tips and tricks using terminal](https://www.youtube.com/watch?v=qOrlYzqXPa8&pp=ygUcdGVybWluYWwgZm9yIGJlZ2lubmVycyBtYWNvcw%3D%3D)
 
 #### Monday, September 16:
