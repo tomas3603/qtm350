@@ -809,7 +809,7 @@
     "href": "index.html",
     "title": "QTM 350 - Data Science Computing",
     "section": "",
-    "text": "Welcome to QTM 350! This course introduces key tools in modern data science, focusing on three essential aspects: reliability, reproducibility, and robustness. We will cover command line interfaces and vim, version control with Git and GitHub, and literate programming using Quarto and Jupyter Notebooks. You will also learn about data storage and manipulation with SQL and Pandas, and parallel computing with Dask. We will explore artificial intelligence-assisted programming with GitHub Copilot and finish with Docker and containerisation."
+    "text": "Welcome to QTM 350! This course introduces key tools in modern data science, focusing on three essential aspects: reliability, reproducibility, and robustness. We will cover command line interfaces and vim, version control with Git and GitHub, and literate programming using Quarto and Jupyter Notebooks. You will also learn about data storage and manipulation with SQL and Pandas, and parallel computing with Dask. We will explore artificial intelligence-assisted programming with GitHub Copilot and finish with Docker and containerisation.\nWe will meet every Monday and Wednesday from 14:30 to 15:45 in the Maths and Science Centre - E208."
   },
   {
     "objectID": "index.html#contact-information",
